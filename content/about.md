@@ -4,7 +4,7 @@ date: 2023-03-09T13:26:26+10:00
 draft: false
 ---
 
-# Introduction
+# Introduction :information_source:
 
 Want to learn [command syntax](https://github.com/command-line-interface-pages/cli-pages),
 [hierichy structure](https://github.com/command-line-interface-pages/directory-pages)
@@ -18,7 +18,7 @@ provided examples!
 > Note for programmers: all pages are written in a parsable way so it's possible
 > automatically extract some data from them to handle it.
 
-## Installation
+## Installation :smile:
 
 Via the following commands you can install our page
 [render](https://github.com/command-line-interface-pages/v2-tooling/tree/main/clip-view):
@@ -32,12 +32,12 @@ make -f "$temp" remote-install
 To virefy whether if successfully installed to `/home/$USER/.local/bin` type
 `clip-view --version`. To view `cat` page just type `clip-view cat`.
 
-## Uninstallation
+## Uninstallation :disappointed:
 
 All tools are being installed in `/home/$USER/.local/bin` directory. So to remove
 them just run `rm` command like `rm /home/$USER/.local/bin/clip-view`.
 
-## Why to use this project?
+## Why to use this project? :question:
 
 There are numerous reasons, we listed some of them down below.
 
@@ -73,21 +73,21 @@ From the end-user perspective:
 We mention reasons mostly related to CLI pages, but mostly they are valid for
 directory pages too.
 
-## Expectations from the end user
+## Expectations from the end user :books:
 
 We assume that the end user is already familiar with some programming stuff. To
 be more precise we expect all page syntax to be understandable by default no
 matter it what. When we encounter some repetetive problem we standardize a way
 to solve it. We don't handle each page specificly.
 
-## Contributions
+## Contributions :hammer_and_wrench:
 
 Each repository contains link to it's contributing guide (named CONTRIBUTING.md)
 where you can learn how to get started with writing your own pages,
 [themes](https://github.com/command-line-interface-pages/themes)
 or [tools](https://github.com/command-line-interface-pages/v2-tooling).
 
-## Supported by
+## Supported by :heart_eyes:
 
 [TlDr](https://github.com/tldr-pages/tldr/pull/9845)
 [Cheat](https://github.com/cheat/cheatsheets/pull/226)
