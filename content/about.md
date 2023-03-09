@@ -71,7 +71,9 @@ From the end-user perspective:
 - Be yourself, and not the other person. Chose your code option's style.
 
 We mention reasons mostly related to CLI pages, but mostly they are valid for
-directory pages too.
+directory pages too. And, don't forget, that page look can be drasticly
+customized via our
+[themes](https://github.com/command-line-interface-pages/themes).
 
 ## Expectations from the end user :books:
 
