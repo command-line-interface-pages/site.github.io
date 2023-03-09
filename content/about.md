@@ -89,6 +89,8 @@ where you can learn how to get started with writing your own pages,
 [themes](https://github.com/command-line-interface-pages/themes)
 or [tools](https://github.com/command-line-interface-pages/v2-tooling).
 
+Basically, to write themes you should know YAML and for writting pages Markdown.
+
 ## Supported by :heart_eyes:
 
 [TlDr](https://github.com/tldr-pages/tldr/pull/9845)
