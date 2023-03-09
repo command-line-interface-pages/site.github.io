@@ -10,7 +10,7 @@ Want to learn [command syntax][cli-pages],
 [hierichy structure][directory-pages]
 and command configs? Don't wanna read long man pages like `git` has?
 
-{{< image src="git.jpg" alt="git man" position="center" style="border-radius: 4px;" >}}
+{{< image src="git-man.jpg" alt="git man" position="center" style="border-radius: 4px;" >}}
 
 Then this project is for you! Don't just copy-paste things, learn them through
 provided examples! Just look how our page is simpler:
