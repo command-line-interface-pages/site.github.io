@@ -62,7 +62,7 @@ to solve it. We don't handle each page specificly.
 
 ## Contributions :hammer_and_wrench:
 
-Each repository contains link to it's contributing guide (named CONTRIBUTING.md)
+Each repository contains link to it's contributing guide (named **CONTRIBUTING.md**)
 where you can learn how to get started with writing your own pages,
 [themes][themes]
 or [tools][tools].
