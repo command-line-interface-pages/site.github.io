@@ -3,7 +3,7 @@ languageCode: en-us
 title: Command Line Interface Pages
 theme: terminal
 params:
-  themeColor: green
+  themeColor: blue
   fullWidthTheme: false
   centerTheme: true
   readingTime: true
