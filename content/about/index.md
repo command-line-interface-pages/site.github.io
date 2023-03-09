@@ -7,8 +7,8 @@ draft: false
 # Introduction :information_source:
 
 Want to learn [command syntax][cli-pages],
-[hierichy structure][directory-pages]
-and command configs? Don't wanna read long man pages like `git` has?
+[hierarchy structure][directory-pages]
+and command configs? Don't want to read long man pages like `git` has?
 
 {{< image src="git-man.jpg" alt="git man" position="center" style="border-radius: 4px;" >}}
 
@@ -17,7 +17,7 @@ provided examples! Just look how our page is simpler:
 
 {{< image src="git-clip.jpg" alt="git man" position="center" style="border-radius: 4px; width:420px; height: auto" >}}
 
-> Note for programmers: all pages are written in a parsable way so it's possible
+> Note for programmers: all pages are written in a parsable way, so it's possible
 > automatically extract some data from them to handle it.
 
 ## Installation :smile:
@@ -31,10 +31,10 @@ wget -O "$temp" https://raw.githubusercontent.com/command-line-interface-pages/v
 make -f "$temp" remote-install
 {{< /code >}}
 
-To virefy whether if successfully installed to `/home/$USER/.local/bin` type
+To verify whether if successfully installed to `/home/$USER/.local/bin` type
 `clip-view --version`. To view `cat` page just type `clip-view cat`.
 
-> Note for programmers: installation also can be done via clonning
+> Note for programmers: installation also can be done via cloning
 > [tools][tools] repo, moving to `clip-view` directory and issuing
 > `make install` command.
 
@@ -57,8 +57,8 @@ them just run `rm` command like `rm /home/$USER/.local/bin/clip-view`.
 
 We assume that the end user is already familiar with some programming stuff. To
 be more precise we expect all page syntax to be understandable by default no
-matter it what. When we encounter some repetetive problem we standardize a way
-to solve it. We don't handle each page specificly.
+matter it what. When we encounter some repetitive problem we standardize a way
+to solve it. We don't handle each page specifically.
 
 ## Contributions :hammer_and_wrench:
 
@@ -67,8 +67,8 @@ where you can learn how to get started with writing your own pages,
 [themes][themes]
 or [tools][tools].
 
-Basically, to write themes you should know YAML while for writting pages
-Markdown is required. If you wanna more then it's possible to develop project
+Basically, to write themes you should know YAML while for writing pages
+Markdown is required. If you wanna more than it's possible to develop project
 tools like render, parser and other stuff which are written mainly in Bash.
 
 ## Supported by :heart_eyes:
