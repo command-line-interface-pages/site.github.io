@@ -13,7 +13,9 @@ and command configs? Don't wanna read long man pages like `git` has?
 {{< image src="git.jpg" alt="git man" position="center" style="border-radius: 4px;" >}}
 
 Then this project is for you! Don't just copy-paste things, learn them through
-provided examples!
+provided examples! Just look how our page is simpler:
+
+{{< image src="git-clip.jpg" alt="git man" position="center" style="border-radius: 4px; width:420px; height: auto" >}}
 
 > Note for programmers: all pages are written in a parsable way so it's possible
 > automatically extract some data from them to handle it.
