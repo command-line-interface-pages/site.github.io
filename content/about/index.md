@@ -6,8 +6,8 @@ draft: false
 
 # Introduction :information_source:
 
-Want to learn [command syntax](https://github.com/command-line-interface-pages/cli-pages),
-[hierichy structure](https://github.com/command-line-interface-pages/directory-pages)
+Want to learn [command syntax][cli-pages],
+[hierichy structure][directory-pages]
 and command configs? Don't wanna read long man pages like `git` has?
 
 {{< image src="git.jpg" alt="git man" position="center" style="border-radius: 4px;" >}}
@@ -21,7 +21,7 @@ provided examples!
 ## Installation :smile:
 
 Via the following commands you can install our page
-[render](https://github.com/command-line-interface-pages/v2-tooling/tree/main/clip-view):
+[render][render]:
 
 {{< code language="bash" title="Installation commands" id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
 temp="$(mktemp)"
@@ -73,7 +73,7 @@ From the end-user perspective:
 We mention reasons mostly related to CLI pages, but mostly they are valid for
 directory pages too. And, don't forget, that page look can be drasticly
 customized via our
-[themes](https://github.com/command-line-interface-pages/themes).
+[themes][themes].
 
 ## Expectations from the end user :books:
 
@@ -86,8 +86,8 @@ to solve it. We don't handle each page specificly.
 
 Each repository contains link to it's contributing guide (named CONTRIBUTING.md)
 where you can learn how to get started with writing your own pages,
-[themes](https://github.com/command-line-interface-pages/themes)
-or [tools](https://github.com/command-line-interface-pages/v2-tooling).
+[themes][themes]
+or [tools][tools].
 
 Basically, to write themes you should know YAML and for writting pages Markdown.
 
@@ -96,4 +96,10 @@ Basically, to write themes you should know YAML and for writting pages Markdown.
 [TlDr](https://github.com/tldr-pages/tldr/pull/9845)
 [Cheat](https://github.com/cheat/cheatsheets/pull/226)
 [Cheatsheets](https://github.com/rstacruz/cheatsheets/pull/1953)
-[Eg](hhttps://github.com/srsudar/eg/pull/97)
+[Eg](https://github.com/srsudar/eg/pull/97)
+
+[cli-pages]: https://github.com/command-line-interface-pages/cli-pages
+[directory-pages]: https://github.com/command-line-interface-pages/directory-pages
+[render]: https://github.com/command-line-interface-pages/v2-tooling/tree/main/clip-view
+[themes]: https://github.com/command-line-interface-pages/themes
+[tools]: https://github.com/command-line-interface-pages/v2-tooling
