@@ -1,0 +1,24 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: Command Line Interface Pages
+theme: terminal
+params:
+  themeColor: green
+  fullWidthTheme: false
+  centerTheme: true
+  readingTime: true
+  Toc: true
+  TocTitle: Contents
+menu:
+  main:
+  - identifier: about
+    name: About
+    url: /about/
+    weight: 1
+  - identifier: goals
+    name: Goals
+    url: /goals/
+    weight: 1
+  - identifier: future
+    name: Future
+    url: /future/
