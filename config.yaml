@@ -1,4 +1,4 @@
-baseURL: http://command-line-interface-pages.org/
+baseURL: https://command-line-interface-pages.github.io/site.github.io
 languageCode: en-us
 title: Command Line Interface Pages
 theme: terminal
