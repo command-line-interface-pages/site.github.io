@@ -1,0 +1,1 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q{{< code language=\"bash\" title=\"Installation commands\" id=\"1\" expand=\"Show\" collapse=\"Hide\" isCollapsed=\"true\" >}} temp=\"\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Qtemp\" https://raw.githubusercontent.com/command-line-interface-pages/v2-tooling/main/clip-view/makefile make -f \"$temp\" remote-install {{< /code >}}\\E$"}
