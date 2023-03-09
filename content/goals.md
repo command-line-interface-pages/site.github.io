@@ -6,9 +6,11 @@ draft: false
 
 # Introduction :information_source:
 
-This page contains the current goals we wanna archive in our project. The main
-task now is to make all tools, pages and themes support
-[v2.7.0 syntax][syntax].
+The main task now is to make all tools support
+[v2.7.0 syntax][syntax]:
+
+- write Bash-based parser to quickly parse pages
+- use it in render and some converters
 
 ## [CLI pages][cli-pages] :books:
 
