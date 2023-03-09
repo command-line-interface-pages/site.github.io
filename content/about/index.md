@@ -32,10 +32,17 @@ make -f "$temp" remote-install
 To virefy whether if successfully installed to `/home/$USER/.local/bin` type
 `clip-view --version`. To view `cat` page just type `clip-view cat`.
 
+> Note for programmers: installation also can be done via clonning
+> [tools][tools] repo, moving to `clip-view` directory and issuing
+> `make install` command.
+
 ## Uninstallation :disappointed:
 
 All tools are being installed in `/home/$USER/.local/bin` directory. So to remove
 them just run `rm` command like `rm /home/$USER/.local/bin/clip-view`.
+
+> Note for programmers: uninstallation also can be done via moving to
+> `clip-view` directory and issuing `make uninstall` command.
 
 ## Why to use this project? :question:
 
