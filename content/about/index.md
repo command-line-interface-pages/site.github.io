@@ -67,7 +67,9 @@ where you can learn how to get started with writing your own pages,
 [themes][themes]
 or [tools][tools].
 
-Basically, to write themes you should know YAML and for writting pages Markdown.
+Basically, to write themes you should know YAML while for writting pages
+Markdown is required. If you wanna more then it's possible to develop project
+tools like render, parser and other stuff which are written mainly in Bash.
 
 ## Supported by :heart_eyes:
 
