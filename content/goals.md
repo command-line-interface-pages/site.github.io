@@ -27,7 +27,8 @@ refresh them to make them more user-friendly. For instance:
 
 It's a one of brand new repos out there. So at the first place we need just to
 fill it with useful content based on
-[Filesystem Hierarchy Standard][fhs].
+[Filesystem Hierarchy Standard][fhs] and detect current syntax issues in the
+content of such pages to solve them in the next syntax version.
 
 [syntax]: https://github.com/command-line-interface-pages/syntax/blob/main/base.md
 [cli-pages]: https://github.com/command-line-interface-pages/cli-pages
