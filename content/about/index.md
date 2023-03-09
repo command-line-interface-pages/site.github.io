@@ -1,6 +1,6 @@
 ---
 title: "About"
-date: 2023-03-09T13:26:26+10:00
+date: 2023-03-09T17:03:18+10:00
 draft: false
 ---
 
@@ -10,7 +10,7 @@ Want to learn [command syntax](https://github.com/command-line-interface-pages/c
 [hierichy structure](https://github.com/command-line-interface-pages/directory-pages)
 and command configs? Don't wanna read long man pages like `git` has?
 
-{{< image src="/git.jpg" alt="git man" position="center" style="border-radius: 4px;" >}}
+{{< image src="git.jpg" alt="git man" position="center" style="border-radius: 4px;" >}}
 
 Then this project is for you! Don't just copy-paste things, learn them through
 provided examples!
