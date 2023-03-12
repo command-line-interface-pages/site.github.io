@@ -48,7 +48,7 @@ Read [this](./CONTRIBUTING.md) guide for details.
 
 ## Similar projects :books:
 
-> :bell: Default render settings and official clients are used.
+> :bell: Default <something> settings and official clients are used.
 
 - <Project> <project-description>:
 
