@@ -70,4 +70,49 @@ From the end-user perspective:
 For the sake of clear understanding please view [this][readme] **README.md** in CLI page
 repository.
 
+[site]: https://github.com/command-line-interface-pages/site.github.io
 [readme]: https://github.com/command-line-interface-pages/cli-pages/blob/main/README.md?plain=1
+
+## CONTRIBUTING
+
+Contributing guides can exist just as top-level **CONTRIBUTING.md** files and
+have the following chapters inside them:
+
+- `# Contributing guide`  
+  **required**: true
+- `## Prerequisites` lists prerequisites required for a comfortable work with a
+  repository  
+  **required**: true
+- `## How to get started?` provides a link to one of the simplest sources to get
+  started and an explained example  
+  **required**: true
+- `## See also` links for tutorials  
+  **required**: false
+
+To speed up **CONTRIBUTING.md** creation always use the template below:
+
+{{< code language="markdown" title="Template" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
+# Contributing guide
+
+## Prerequisites
+
+The following Visual Studio Code extensions are required for <something>:
+
+- <Extension>
+
+## How to get started?
+
+Before writing your own <something> try to explore existing ones with preinstalled
+prerequisites. Start with the [simplest][simplest] one.
+
+## See also
+
+- <Tutorial>
+
+[simplest]: https://url-to-simplest-example
+{{< /code >}}
+
+For the sake of clear understanding please view [this][contributing] **CONTRIBUTING.md** in CLI page
+repository.
+
+[contributing]: https://github.com/command-line-interface-pages/cli-pages/blob/main/CONTRIBUTING.md?plain=1
