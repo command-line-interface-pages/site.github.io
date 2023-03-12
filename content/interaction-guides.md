@@ -13,16 +13,16 @@ All used things should not just properly work but also be documented.
 All top-level **README.md** files should contain the following headers in this
 order:
 
-- `<Human-readable-repository-name>`: contains the same text as a repository
+- `# <Human-readable-repository-name>`: contains the same text as a repository
   description does  
   **required**: true
-- `Quick introduction :rocket:` quick get started section with 1-2 examples
+- `## Quick introduction :rocket:` quick get started section with 1-2 examples
   aiming to show how to use what is provided in the explained repository  
   **required**: true
-- `Writing <something> :hammer_and_wrench:` reference to a repository
+- `## Writing <something> :hammer_and_wrench:` reference to a repository
   contributing guide  
   **required**: true
-- `Benefits :+1:` reasons to use what is provided in the explained repository
+- `## Benefits :+1:` reasons to use what is provided in the explained repository
   describing benefits for developers and for the end users  
   **required**: true for all repositories except [site][site] one
 - `## Similar projects :books:` similar projects which provide almost the
