@@ -92,6 +92,7 @@ have the following chapters inside them:
 To speed up **CONTRIBUTING.md** creation always use the template below:
 
 {{< code language="markdown" title="Template" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
+
 # Contributing guide
 
 ## Prerequisites
