@@ -6,6 +6,8 @@ draft: false
 
 > :deciduous_tree: Slogan: *[E]xtremely [B]oring, [B]e [C]oncise*, or *EB;BC*
 
+[:star: Star on GitHub](https://github.com/command-line-interface-pages/cli-pages)
+
 # Introduction :information_source:
 
 Want to learn [command syntax][cli-pages],
