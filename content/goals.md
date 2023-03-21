@@ -16,13 +16,13 @@ The main task now is to make all tools support
 
 ## [CLI pages][cli-pages] :books:
 
-Now we are focused on updating and adding missing coreutils pages. We're aiming
+Now we are focused on updating and adding missing `coreutils` pages. We're aiming
 to refresh them to make them more user-friendly. For instance:
 
 - provide both GNU-style long and short options to let user chose what they are
   the most comfortable with
 - add auto generated examples for help/version options like `--help`/`--version`
-  respectively to let people easily access builtin command help when required
+  respectively to let people easily access built-in command help when required
 - add mnemonics for almost all options to simplify command option's memorization
 
 [cli-pages]: https://github.com/command-line-interface-pages/cli-pages
