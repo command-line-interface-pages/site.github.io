@@ -36,3 +36,10 @@ content of such pages to solve them in the next syntax version.
 
 [directory-pages]: https://github.com/command-line-interface-pages/directory-pages
 [fhs]: https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html
+
+## [Themes][themes] :books:
+
+The main goal here is to add much more customization settings and possibility to
+specify what syntax version is required to use some theme.
+
+[themes]: https://github.com/command-line-interface-pages/themes
