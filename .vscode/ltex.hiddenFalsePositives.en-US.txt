@@ -9,3 +9,4 @@
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q{{< code language=\"markdown\" title=\"Template\" id=\"2\" expand=\"Show\" collapse=\"Hide\" isCollapsed=\"true\" >}}\nContributing guide\\E$"}
 {"rule":"WHITESPACE_RULE","sentence":"^\\QBefore writing your own  try to explore existing ones with preinstalled prerequisites.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q{{< code language=\"markdown\" title=\"Template\" id=\"2\" expand=\"Show\" collapse=\"Hide\" isCollapsed=\"true\" >}}\\E$"}
+{"rule":"UNLIKELY_OPENING_PUNCTUATION","sentence":"^\\Q:deciduous_tree: Slogan: Extremely Boring, Be Concise, or EB;BC\\E$"}
