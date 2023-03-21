@@ -4,6 +4,8 @@ date: 2023-03-09T17:03:18+10:00
 draft: false
 ---
 
+> :deciduous_tree: Slogan: *[E]xtremely [B]oring, [B]e [C]oncise*, or *EB;BC*
+
 # Introduction :information_source:
 
 Want to learn [command syntax][cli-pages],
