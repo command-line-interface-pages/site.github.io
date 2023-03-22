@@ -23,7 +23,7 @@ menu:
   - identifier: future
     name: Future
     url: /future/
-  - identifier: interaction-guide
-    name: Interaction guides
-    url: /interaction-guides/
+  - identifier: guides
+    name: Guides
+    url: /guides/
 
