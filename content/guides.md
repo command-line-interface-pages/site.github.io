@@ -130,7 +130,7 @@ information about how to use them and who created it:
   - `help`: open a man page
   - `version`: print a version with a trailing `\n` and without `v` prefix, like
     **2.17.1**
-- `author`: print an author name with a trailing `\n`, like
+  - `author`: print an author name with a trailing `\n`, like
     **Emily Grace Seville**
   - `email`: print an author email with a trailing `\n`, like
     **EmilySeville7cfg@gmail.com**
