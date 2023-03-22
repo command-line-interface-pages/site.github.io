@@ -56,6 +56,11 @@ them just run `rm` command like `rm /home/$USER/.local/bin/clip-view`.
 - Permit users to use their preferences
 - Write in the parsable format
 - Customize page look as you want
+- Add page for any project you want
+
+> :information_source: Note: projects with less than 5 stars considered as
+> untrusted. It doesn't characterize them in a negative way, it just means
+> they are not popular now.
 
 ## Expectations from the end user :books:
 
