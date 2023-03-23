@@ -10,6 +10,8 @@ params:
   readingTime: true
   Toc: true
   TocTitle: Contents
+  logo:
+    logoText: "[C]ommand [L]ine [I]nterface [P]ages (CLIP)"
 menu:
   main:
   - identifier: about
