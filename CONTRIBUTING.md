@@ -18,12 +18,12 @@ Public repositories are not listed automatically based on our organization.
 It's manually chosen what to show and what not. To add a new repository to
 the repository list:
 
-- Open `data/repositories.yaml` file
+- Open [`data/repositories.yaml`](./data/repositories.yaml) file
 - Add a new array item like:
 
     ```yaml
     - name: cli-pages
-    description: Command Line Interface (CLI) pages
+      description: Command Line Interface (CLI) pages
     ```
 
 ## See also
