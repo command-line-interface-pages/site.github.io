@@ -1,0 +1,8 @@
+- name: cli-pages
+  description: Command Line Interface (CLI) pages
+- name: directory-pages
+  description: Directory pages
+- name: themes
+  description: Themes
+- name: syntax
+  description: Syntax
