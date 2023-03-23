@@ -39,3 +39,13 @@ project maintainers and it's contributors.
   are being merged faster.
 - Always thanks for contributios no matter they are. People invested their time
   and effort to help our project, respect it.
+
+## Resolving conflicts
+
+CLI/directory pages, their themes already existing in repositories can't be
+simply replaced by completely unrelated ones. It means that when there are
+exactly named commands, for instance, it's impossible to create a page for a new
+one without changing the way repository is organized.
+
+Breaking changes can be made while such repository restructuring, but should be
+announced before at least one month they are encorporated.
