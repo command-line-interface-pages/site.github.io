@@ -26,4 +26,7 @@ menu:
   - identifier: guides
     name: Guides
     url: /guides/
+  - identifier: pr-guides
+    name: Pull request guides
+    url: /pr-guides/
 

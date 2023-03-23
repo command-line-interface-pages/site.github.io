@@ -1,0 +1,41 @@
+---
+title: "Pull request guides"
+date: 2023-03-23T09:52:15+10:00
+draft: false
+---
+
+# Introduction
+
+The way _[p]ull [r]equests_ or _PRs_ are handled should be benefitial for both
+project maintainers and it's contributors.
+
+## General rules
+
+- Be polite and respect other's opinion, but it doesn't mean that you should
+  always agree with it.
+- Help contributors with resolving their issues related to this project. Be
+  concise and refer to this site guidelines when they exist for some situation.
+- Use inclusive language and pronouns people prefer. Prefer like
+  "denylist"/"allowlist" instead of "blacklist"/"whitelist", for instance.
+  When it's unknown how to refer to person "they" pronoun can be used.
+- Never make exceptions of any formal rules.
+
+## Review
+
+- Always request odd number of reviewers, by default just one. Having several
+  reviewers benefitial for suspicious sutiations when another maintainer
+  or contributor has a different opinion about what should be done in PR.
+- PRs are not a place for discussing quality of syntax or guides. If you see a
+  problem and some PR demonstrates it clearly, please create an issue in the
+  right repository.
+- Never block PRs merge just because you personally don't like something in it.
+  There are just two valid reasons to do it: invalid syntax and page examples
+  not sorted by increasing complexity. By complexity we mean here simply number
+  of options/subcommands and commands required for some example. Code examples
+  with an equal complexity can be ordered as you want.
+- Test CI and automation scripts, relying on them. People can make errors
+  and introduce them in code, but even so automation is an important part of
+  our workflow. More automation is done, less reviewers are required, PRs
+  are being merged faster.
+- Always thanks for contributios no matter they are. People invested their time
+  and effort to help our project, respect it.
