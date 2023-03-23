@@ -31,4 +31,6 @@ menu:
   - identifier: pr-guides
     name: Pull request guides
     url: /pr-guides/
-
+  - identifier: projects
+    name: Similar projects
+    url: /projects/
