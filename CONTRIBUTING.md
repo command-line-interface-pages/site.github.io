@@ -2,10 +2,10 @@
 
 ## Prerequisites
 
-The following Visual Studio Code extensions are required for IntelliSense in a
-site config file:
+### Visual Studio Code
 
-- [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+- YAML:
+  - [YAML (IntelliSence)](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 
 ## How to get started?
 
