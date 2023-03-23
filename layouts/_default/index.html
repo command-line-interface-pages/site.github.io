@@ -4,6 +4,8 @@
       {{ .Content }}
     </div>
   {{ end }}
+  {{ ":gift: Learn terminal, not just memorize commands!" | emojify | markdownify }}
+  {{ "> :deciduous_tree: Slogan: *[E]xtremely [B]oring, [B]e [C]oncise*, or *EB;BC*" | emojify | markdownify }}
   {{ $repositories := dict "cli-pages" "Command Line Interface (CLI) pages" "directory-pages" "Directory pages" "themes" "Themes" "syntax" "Syntax definition" }}
   {{ range $repository, $description := $repositories }}
     <a href="https://github.com/command-line-interface-pages/{{ $repository }}">{{ emojify ":file_folder:" }} {{ $repository | markdownify }}: {{ $description }}</a>
