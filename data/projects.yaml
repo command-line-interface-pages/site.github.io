@@ -1,6 +1,7 @@
 - name: eg
   description: Useful examples at the command line
   url: https://github.com/srsudar/eg
+  image: eg.png
   pros:
     - Simple syntax for writting pages
   cons:
@@ -9,6 +10,7 @@
 - name: TlDr
   description: Collaborative cheatsheets for console commands
   url: https://github.com/tldr-pages/tldr
+  image: tldr.png
   pros:
     - Simple syntax for writing pages
     - Numerous clients in different programming languages
