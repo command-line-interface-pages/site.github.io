@@ -49,6 +49,9 @@
   {{ range $project := $.Site.Data.projects }}
     {{ printf "# [%s](%s)" $project.name $project.url | markdownify }}
     {{ printf "%s." $project.description }}
+    {{ if $project.image }}
+      {{ printf "![%s](%s)" $project.name $project.image | markdownify }}
+    {{ end }}
     {{ if $project.pros }}
     <div>
       {{ "### Pros :smile:" | emojify | markdownify }}
