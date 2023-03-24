@@ -38,6 +38,14 @@
                     "https://github.com/srsudar/eg"
                 ]
             },
+            "image": {
+                "description": "A demonstration image",
+                "type": "string",
+                "minLength": 1,
+                "examples": [
+                    "eg.png"
+                ]
+            },
             "pros": {
                 "description": "Project pros",
                 "type": "array",
