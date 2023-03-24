@@ -10,3 +10,5 @@ layout: projects
 There are several projects listed down below.
 
 ## List
+
+> :warning: Note: projects are compared to this one.
