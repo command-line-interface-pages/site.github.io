@@ -50,7 +50,7 @@
     {{ printf "# [%s](%s)" $project.name $project.url | markdownify }}
     {{ printf "%s." $project.description }}
     {{ if $project.image }}
-      {{ printf "![%s](%s)" $project.name $project.image | markdownify }}
+      <img src="{{ $project.image }}" alt="{{ $project.name }}" class="center" style="border-radius: 4px; width:520px; height: auto">
     {{ end }}
     {{ if $project.pros }}
     <div>
