@@ -47,7 +47,7 @@
   </div>
 
   {{ range $project := $.Site.Data.projects }}
-    {{ printf "# %s" $project.name | markdownify }}
+    {{ printf "# [%s](%s)" $project.name $project.url | markdownify }}
     {{ printf "%s." $project.description }}
     {{ if $project.pros }}
     <div>
