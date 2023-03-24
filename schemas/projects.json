@@ -1,0 +1,72 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "similar projects",
+    "description": "Similar projects",
+    "type": "array",
+    "uniqueItems": true,
+    "items": {
+        "title": "similar project",
+        "description": "A similar project",
+        "type": "object",
+        "required": [
+            "name",
+            "description",
+            "url"
+        ],
+        "properties": {
+            "name": {
+                "description": "A project name",
+                "type": "string",
+                "minLength": 1,
+                "examples": [
+                    "eg"
+                ]
+            },
+            "description": {
+                "description": "A project description",
+                "type": "string",
+                "minLength": 1,
+                "examples": [
+                    "Useful examples at the command line"
+                ]
+            },
+            "url": {
+                "description": "A project url",
+                "type": "string",
+                "minLength": 1,
+                "examples": [
+                    "https://github.com/srsudar/eg"
+                ]
+            },
+            "image": {
+                "description": "A demonstration image",
+                "type": "string",
+                "minLength": 1,
+                "examples": [
+                    "eg.png"
+                ]
+            },
+            "pros": {
+                "description": "Project pros",
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                    "description": "Project pros",
+                    "type": "string",
+                    "minLength": 1
+                }
+            },
+            "cons": {
+                "description": "Project cons",
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                    "description": "Project cons",
+                    "type": "string",
+                    "minLength": 1
+                }
+            }
+        },
+        "additionalProperties": false
+    }
+}
