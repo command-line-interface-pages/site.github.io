@@ -1,6 +1,7 @@
 {
     "yaml.schemas": {
         "https://json.schemastore.org/hugo.json": "config.yaml",
-        "schemas/repositories.json": "data/repositories.yaml"
+        "schemas/repositories.json": "data/repositories.yaml",
+        "schemas/projects.json": "data/projects.yaml"
     }
 }

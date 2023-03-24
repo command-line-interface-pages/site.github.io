@@ -26,6 +26,19 @@ the repository list:
       description: Command Line Interface (CLI) pages
     ```
 
+### How to add a similar project to the project page?
+
+To add a new similar project to the project list:
+
+- Open [`data/projects.yaml`](./data/projects.yaml) file
+- Add a new array item like:
+
+    ```yaml
+    - name: eg
+      description: Useful examples at the command line
+      url: https://github.com/srsudar/eg
+    ```
+
 ## See also
 
 - [Mike Dane: Hugo tutorials][mike_dane_playlist]
