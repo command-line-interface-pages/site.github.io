@@ -31,7 +31,8 @@ order:
 
 To speed up **README.md** creation always use the template below:
 
-{{< code language="markdown" title="Template" id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
+{{< code language="markdown" title="Template" id="1" expand="Show"
+  collapse="Hide" isCollapsed="true" >}}
 # <Human-readable-repository-name>
 
 [![chat](https://img.shields.io/badge/Current-goals-a32236?labelColor=ed425c&style=flat-square)][goals]
@@ -67,8 +68,8 @@ From the end-user perspective:
 [goals]: https://command-line-interface-pages.github.io/site.github.io/goals/#cli-pagescli-pages-
 {{< /code >}}
 
-For the sake of clear understanding please view [this][readme] **README.md** in CLI page
-repository.
+For the sake of clear understanding please view [this][readme] **README.md** in
+CLI page repository.
 
 [site]: https://github.com/command-line-interface-pages/site.github.io
 [readme]: https://github.com/command-line-interface-pages/cli-pages/blob/main/README.md?plain=1
@@ -91,7 +92,8 @@ have the following chapters inside them:
 
 To speed up **CONTRIBUTING.md** creation always use the template below:
 
-{{< code language="markdown" title="Template" id="2" expand="Show" collapse="Hide" isCollapsed="true" >}}
+{{< code language="markdown" title="Template" id="2" expand="Show"
+  collapse="Hide" isCollapsed="true" >}}
 
 # Contributing guide
 
@@ -113,8 +115,8 @@ prerequisites. Start with the [simplest][simplest] one.
 [simplest]: https://url-to-simplest-example
 {{< /code >}}
 
-For the sake of clear understanding please view [this][contributing] **CONTRIBUTING.md** in CLI page
-repository.
+For the sake of clear understanding please view [this][contributing]
+**CONTRIBUTING.md** in CLI page repository.
 
 [contributing]: https://github.com/command-line-interface-pages/cli-pages/blob/main/CONTRIBUTING.md?plain=1
 
