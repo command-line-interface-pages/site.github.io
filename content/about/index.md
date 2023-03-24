@@ -14,12 +14,14 @@ Want to learn [command syntax][cli-pages],
 [hierarchy structure][directory-pages]
 and command configs? Don't want to read long man pages like `git` has?
 
-{{< image src="git-man.jpg" alt="git man" position="center" style="border-radius: 4px;" >}}
+{{< image src="git-man.jpg" alt="git man" position="center"
+    style="border-radius: 4px;" >}}
 
 Then this project is for you! Don't just copy-paste things, learn them through
 provided examples! Just look how our page is simpler:
 
-{{< image src="git-clip.jpg" alt="git man" position="center" style="border-radius: 4px; width:420px; height: auto" >}}
+{{< image src="git-clip.jpg" alt="git man" position="center"
+    style="border-radius: 4px; width:420px; height: auto" >}}
 
 > Note for programmers: all pages are written in a parsable way, so it's possible
 > automatically extract some data from them to handle it.
@@ -29,7 +31,8 @@ provided examples! Just look how our page is simpler:
 Via the following commands you can install our page
 [render][render]:
 
-{{< code language="bash" title="Installation commands" id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
+{{< code language="bash" title="Installation commands" id="1" expand="Show"
+    collapse="Hide" isCollapsed="true" >}}
 temp="$(mktemp)"
 wget -O "$temp" https://raw.githubusercontent.com/command-line-interface-pages/v2-tooling/main/clip-view/makefile
 make -f "$temp" remote-install
@@ -59,7 +62,7 @@ them just run `rm` command like `rm /home/$USER/.local/bin/clip-view`.
 - Add page for any project you want
 
 > :information_source: Note: projects with less than 5 stars considered as
-> untrusted. It doesn't characterize them in a negative way, it just means
+> untrusted. It doesn't characterize them negatively, it just means
 > they are not popular now.
 
 ## Expectations from the end user :books:

@@ -6,4 +6,4 @@ draft: false
 
 ## Introduction
 
-Today we launching our official Command Line Interface Pages site!
+Today we're launching our official Command Line Interface Pages site!
