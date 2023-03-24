@@ -6,6 +6,8 @@
 
 - YAML:
   - [YAML (IntelliSence)](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+- commit messages:
+  - [commitlint (Linter)](https://marketplace.visualstudio.com/items?itemName=joshbolduc.commitlint)
 
 ## How to get started?
 
