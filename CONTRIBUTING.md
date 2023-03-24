@@ -41,6 +41,17 @@ To add a new similar project to the project list:
       url: https://github.com/srsudar/eg
     ```
 
+### How else can I help?
+
+Now we don't have anybody in organization who understands HTML, CSS and
+JavaScript and willing to close [opened issues][issues]
+related to these languages. If you are an open-source contributor and want to
+help us, go ahead and make PR. 😄
+
+Thanks!
+
+[issues]: https://github.com/command-line-interface-pages/site.github.io/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22
+
 ## See also
 
 - [Mike Dane: Hugo tutorials][mike_dane_playlist]

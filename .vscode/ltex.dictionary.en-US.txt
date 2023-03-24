@@ -3,3 +3,5 @@ Cheatsheets
 Eg
 IntelliSense
 subcommands
+IntelliSence
+commitlint
