@@ -4,7 +4,7 @@ date: 2023-03-12T19:16:53+10:00
 draft: false
 ---
 
-# Introduction :information_source:
+# Introduction
 
 All used things should not just properly work but also be documented.
 
