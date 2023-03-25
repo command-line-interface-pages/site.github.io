@@ -45,7 +45,7 @@ Read [this](./CONTRIBUTING.md) guide for details.
 {{< /code >}}
 
 For the sake of clear understanding please view [this][readme] **README.md** in
-CLI page repository.
+this repository.
 
 [readme]: https://github.com/command-line-interface-pages/site.github.io/blob/main/README.md?plain=1
 
