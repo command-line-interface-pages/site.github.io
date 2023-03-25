@@ -6,3 +6,4 @@ subcommands
 IntelliSence
 commitlint
 isCollapsed
+ci-status

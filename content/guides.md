@@ -29,11 +29,14 @@ To speed up **README.md** creation always use the template below:
   collapse="Hide" isCollapsed="true" >}}
 # <Human-readable-repository-name>
 
+![ci-status](https://img.shields.io/github/actions/workflow/status/command-line-interface-pages/<Repository>/ci.yaml?style=flat-square)
+[![help-wanted-issues](https://img.shields.io/github/issues/command-line-interface-pages/<Repository>/help%20wanted?color=orange&style=flat-square)][help-wanted-issues]
 [![goals](https://img.shields.io/badge/Current-goals-a32236?labelColor=ed425c&style=flat-square)][goals]
 
 <Repository-description>.
 
 [goals]: https://command-line-interface-pages.github.io/site.github.io/goals/#
+[help-wanted-issues]: https://github.com/command-line-interface-pages/site.github.io/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22
 
 ## Quick introduction :rocket:
 
@@ -43,6 +46,11 @@ To speed up **README.md** creation always use the template below:
 
 Read [this](./CONTRIBUTING.md) guide for details.
 {{< /code >}}
+
+- If continuous integration is not set up then CI badge can be omitted.
+- If there are no goals listed in [this]({{< ref "goals" >}}) page then the last
+  badge can be omitted.
+- The middle badge can never be omitted.
 
 For the sake of clear understanding please view [this][readme] **README.md** in
 this repository.
