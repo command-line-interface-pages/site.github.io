@@ -1,4 +1,4 @@
-name: Deploy Hugo site to Pages
+name: CD
 
 on:
   push:
