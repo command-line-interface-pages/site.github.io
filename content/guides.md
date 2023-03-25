@@ -51,7 +51,7 @@ this repository.
 
 ## CONTRIBUTING
 
-Contributing guides can exist just as top-level **CONTRIBUTING.md** files and
+Contributing guides must exist just as top-level **CONTRIBUTING.md** files and
 have the following chapters inside them:
 
 - `# Contributing guide`  
@@ -76,12 +76,13 @@ To speed up **CONTRIBUTING.md** creation always use the template below:
 
 The following Visual Studio Code extensions are required for <something>:
 
-- <Extension>
+- <Extension-category>
+  - [<Extension> <Used-for>](<url>)
 
 ## How to get started?
 
-Before writing your own <something> try to explore existing ones with preinstalled
-prerequisites. Start with the [simplest][simplest] one.
+Before writing your own <something> try to explore existing ones with
+preinstalled prerequisites. Start with the [simplest][simplest] one.
 
 ## See also
 
@@ -91,9 +92,16 @@ prerequisites. Start with the [simplest][simplest] one.
 {{< /code >}}
 
 For the sake of clear understanding please view [this][contributing]
-**CONTRIBUTING.md** in CLI page repository.
+**CONTRIBUTING.md** in this page repository.
 
-[contributing]: https://github.com/command-line-interface-pages/cli-pages/blob/main/CONTRIBUTING.md?plain=1
+Note that it's possible to add nested headers for `How to get started?`. They
+can be used to show how to work with some custom things, like our own Hugo data
+files, but also pay attention what we need for now. Such headers should be
+written as questions, like `How to add a similar project to the project page?`
+or `How else can I help?`. The last one has to be used to explain what kind of
+professionals we lack now to attract their attention.
+
+[contributing]: https://github.com/command-line-interface-pages/site.github.io/blob/main/CONTRIBUTING.md?plain=1
 
 ## Bash
 
