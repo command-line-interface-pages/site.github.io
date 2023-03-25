@@ -14,3 +14,4 @@
 {"rule":"UNLIKELY_OPENING_PUNCTUATION","sentence":"^\\Q:information_source: Note: projects with less than 5 stars considered as untrusted.\\E$"}
 {"rule":"DID_BASEFORM","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q: contains the same text as a repository description does required: true\n\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q quick get started section with 1-2 examples aiming to show how to use what is provided in the explained repository required: true\n\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q reference to a repository contributing guide required: true\\E$"}
 {"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Qsome_function() { declare -r SOME_CONSTANT=\"oops, can't redefine global constant\" }\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qci-status help-wanted-issues\\E$"}
