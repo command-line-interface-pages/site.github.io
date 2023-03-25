@@ -181,8 +181,6 @@ have:
 
 {{< code language="bash" title="Sticky -r flag example" id="3" expand="Show"
     collapse="Hide" isCollapsed="true" >}}
-#!/usr/bin/env bash
-
 declare -r SOME_CONSTANT="global constant"
 
 some_function() {
