@@ -6,4 +6,3 @@ subcommands
 IntelliSence
 commitlint
 isCollapsed
-usr
