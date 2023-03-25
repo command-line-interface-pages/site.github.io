@@ -1,5 +1,7 @@
 # Site
 
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/command-line-interface-pages/site.github.io/ci.yaml?style=flat-square)
+
 An organization site.
 
 ## Quick introduction :rocket:
