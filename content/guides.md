@@ -142,37 +142,55 @@ is a list of things must be used for different languages:
 
 ## Bash
 
-### Basic help system
+### Help system functions
 
-Both interactive tools and library-like scripts (we simply refer to them as
-libraries here, even there is no such concept in Bash) must provide some basic
-information about how to use them and who created it:
+Interactive Bash scripts must define the following functions:
 
-- Interactive scripts should always have the following functions defined:
-  - `help`: open a man page
-  - `version`: print a version with a trailing `\n` and without `v` prefix, like
-    **2.17.1**
-  - `author`: print an author name with a trailing `\n`, like
-    **Emily Grace Seville**
-  - `email`: print an author email with a trailing `\n`, like
-    **EmilySeville7cfg@gmail.com**
-- Non-interactive have to define almost the same things, but prefix each
-  function with some chosen prefix followed by two underscores, like
-  `parser__version`
+- `help`
+- `version`
+- `author`
+- `email`
+
+While non-interactive ones (which we call libraries here) these functions:
+
+- `<file>_help`
+- `<file>_version`
+- `<file>_author`
+- `<file>_email`
+
+`<file>` must contain the library name without extension and dashes replaced
+with underscores. For instance for `clip-parse.sh` help function would be
+`clip_parse__help`.
+
+As a sidenote `*version`, `*author`, `*email` (glob syntax is used here)
+functions must output what they print without trailing new line.
 
 ### Prefixes
 
 When writing scripts you as a programmer are free to chose how to name variables
 and functions, but when library is being created more restrictions apply as
 this code is gonna to be reusable. For the sake of clarity all library functions
-and global variables must have some prefix, like `parser__`. It's not required
-to make it almost the same as library name. For instance, it's okay not to have
-`clip_parse__` prefix when writing clip-parse library.
+and global variables must have some prefix, like `clip_parse__`.
 
-### Capitalization
+### Constants
 
 Variables which are set just once and used as constants must be capitalized,
-even they don't have `-r` flag.
+even they don't have `-r` flag. We don't recommend using `-r` as it's
+impossible to define function-local constants with the same name as global ones
+have:
+
+{{< code language="bash" title="Sticky -r flag example" id="3" expand="Show"
+    collapse="Hide" isCollapsed="true" >}}
+#!/usr/bin/env bash
+
+declare -r SOME_CONSTANT="global constant"
+
+some_function() {
+  declare -r SOME_CONSTANT="oops, can't redefine global constant"
+}
+
+some_function
+{{< /code >}}
 
 ### Input and output parameters for functions
 
@@ -188,10 +206,11 @@ semantics here.
 First ones are used to store `$1`, `$2` and other parameters.
 Always use them, don't write plain references to `$1` or something like that.
 Other programmers have to know variables intend which is depicted via their
-names. Such variables always have to begin with `in_` prefix.
+names. Such variables always have to begin with `in_` prefix like `in_file`.
 
 Output variables present things those will be returned or echo-ed and used via
-command substitution. Such variables always have to begin with `out_` prefix.
+command substitution. Such variables always have to begin with `out_` prefix
+like `out_color`.
 
 Everything else is named as temporary variables.
 
@@ -202,3 +221,15 @@ clear where variables are defined at the first place and where reassigned.
 
 Use `-i` flag when variable indented to hold an integer. Don't use `((...))`,
 prefer modifying variables directly.
+
+### Names and values
+
+By default, we assume that variable or constant contains some name. In other
+words `file` must be a file name, not it's content or anything else. To
+indicate that some value like timestamp is stored add `_value` suffix to
+a variable like `timestamp_value`.
+
+Note that we don't tell what can be considered as name and what like value.
+Technically everything can be treated like a some value, but to be more precise
+we differentiate between these two cases. It's like naming everything as a
+`System.Object` in C# while there are many subtypes of it.
