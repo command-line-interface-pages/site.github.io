@@ -5,3 +5,5 @@ IntelliSense
 subcommands
 IntelliSence
 commitlint
+isCollapsed
+usr
