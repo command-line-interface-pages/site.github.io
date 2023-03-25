@@ -1,10 +1,10 @@
 ---
-title: "Interaction guides"
+title: "Guides"
 date: 2023-03-12T19:16:53+10:00
 draft: false
 ---
 
-# Introduction :information_source:
+# Introduction
 
 All used things should not just properly work but also be documented.
 
@@ -22,12 +22,6 @@ order:
 - `## Writing <something> :hammer_and_wrench:` reference to a repository
   contributing guide  
   **required**: true
-- `## Benefits :+1:` reasons to use what is provided in the explained repository
-  describing benefits for developers and for the end users  
-  **required**: true for all repositories except [site][site] one
-- `## Similar projects :books:` similar projects which provide almost the
-  same things as the explained repository does  
-  **required**: false
 
 To speed up **README.md** creation always use the template below:
 
@@ -35,9 +29,11 @@ To speed up **README.md** creation always use the template below:
   collapse="Hide" isCollapsed="true" >}}
 # <Human-readable-repository-name>
 
-[![chat](https://img.shields.io/badge/Current-goals-a32236?labelColor=ed425c&style=flat-square)][goals]
+[![goals](https://img.shields.io/badge/Current-goals-a32236?labelColor=ed425c&style=flat-square)][goals]
 
 <Repository-description>.
+
+[goals]: https://command-line-interface-pages.github.io/site.github.io/goals/#
 
 ## Quick introduction :rocket:
 
@@ -46,37 +42,16 @@ To speed up **README.md** creation always use the template below:
 ## Writing pages :hammer_and_wrench:
 
 Read [this](./CONTRIBUTING.md) guide for details.
-
-## Similar projects :books:
-
-> :bell: Default <something> settings and official clients are used.
-
-- <Project> <project-description>:
-
-  <Screenshot>
-
-## Why to use this project :question:
-
-From the page writer's perspective:
-
-- <Text>.
-
-From the end-user perspective:
-
-- <Text>.
-
-[goals]: https://command-line-interface-pages.github.io/site.github.io/goals/#cli-pagescli-pages-
 {{< /code >}}
 
 For the sake of clear understanding please view [this][readme] **README.md** in
-CLI page repository.
+this repository.
 
-[site]: https://github.com/command-line-interface-pages/site.github.io
-[readme]: https://github.com/command-line-interface-pages/cli-pages/blob/main/README.md?plain=1
+[readme]: https://github.com/command-line-interface-pages/site.github.io/blob/main/README.md?plain=1
 
 ## CONTRIBUTING
 
-Contributing guides can exist just as top-level **CONTRIBUTING.md** files and
+Contributing guides must exist just as top-level **CONTRIBUTING.md** files and
 have the following chapters inside them:
 
 - `# Contributing guide`  
@@ -101,12 +76,13 @@ To speed up **CONTRIBUTING.md** creation always use the template below:
 
 The following Visual Studio Code extensions are required for <something>:
 
-- <Extension>
+- <Extension-category>
+  - [<Extension> <Used-for>](<url>)
 
 ## How to get started?
 
-Before writing your own <something> try to explore existing ones with preinstalled
-prerequisites. Start with the [simplest][simplest] one.
+Before writing your own <something> try to explore existing ones with
+preinstalled prerequisites. Start with the [simplest][simplest] one.
 
 ## See also
 
@@ -116,43 +92,103 @@ prerequisites. Start with the [simplest][simplest] one.
 {{< /code >}}
 
 For the sake of clear understanding please view [this][contributing]
-**CONTRIBUTING.md** in CLI page repository.
+**CONTRIBUTING.md** in this repository.
 
-[contributing]: https://github.com/command-line-interface-pages/cli-pages/blob/main/CONTRIBUTING.md?plain=1
+Note that it's possible to add nested headers for `How to get started?`. They
+can be used to show how to work with some custom things, like our own Hugo data
+files, but also pay attention what we need for now. Such headers should be
+written as questions, like `How to add a similar project to the project page?`
+or `How else can I help?`. The last one has to be used to explain what kind of
+professionals we lack now to attract their attention.
+
+[contributing]: https://github.com/command-line-interface-pages/site.github.io/blob/main/CONTRIBUTING.md?plain=1
+
+## CLI
+
+CLI should have readable and memorable options at the first place, and short
+ones just at the second. It means that not having short options is fine.
+
+But some general options always must have both forms:
+
+- `--help`/`-h`
+- `--version`/`-v`
+- `--author`/`-a`
+- `--email`/`-e`
+
+When custom options (which are not one of these 4 above) consist on multiple
+words they always have to be hyphen-delimited, like `--output-directory`. Short
+options for such long ones should begin with a single dash and have all first
+word letters then, like `-spc` for `--special-placeholder-config` long
+equivalent. Technically such short options are named as old options.
+
+If it's not enough, it's possible to make add even shorter variations by
+picking just the first letter of the short option. Note that more concise
+option is more name collisions can occur. That's why long variants are better.
+
+Never make options which differentiate just by a case, like `-a` and `-A`. It's
+hard to remember what the difference between them. Don't make users to be
+confused.
+
+If you are a such person who prefers type as few as it's possible then provide
+shell completions for commands.
+
+## Help system
+
+Tools always have to invoke some sort of generally used help system instead of
+writing their of equivalents when `--help`/`-h` is passed. To make it clear here
+is a list of things must be used for different languages:
+
+- shell scripts: man page
 
 ## Bash
 
-### Basic help system
+### Help system functions
 
-Both interactive tools and library-like scripts (we simply refer to them as
-libraries here, even there is no such concept in Bash) must provide some basic
-information about how to use them and who created it:
+Interactive Bash scripts must define the following functions:
 
-- Interactive scripts should always have the following functions defined:
-  - `help`: open a man page
-  - `version`: print a version with a trailing `\n` and without `v` prefix, like
-    **2.17.1**
-  - `author`: print an author name with a trailing `\n`, like
-    **Emily Grace Seville**
-  - `email`: print an author email with a trailing `\n`, like
-    **EmilySeville7cfg@gmail.com**
-- Non-interactive have to define almost the same things, but prefix each
-  function with some chosen prefix followed by two underscores, like
-  `parser__version`
+- `help`
+- `version`
+- `author`
+- `email`
+
+While non-interactive ones (which we call libraries here) these functions:
+
+- `<file>_help`
+- `<file>_version`
+- `<file>_author`
+- `<file>_email`
+
+`<file>` must contain the library name without extension and dashes replaced
+with underscores. For instance for `clip-parse.sh` help function would be
+`clip_parse__help`.
+
+As a sidenote `*version`, `*author`, `*email` (glob syntax is used here)
+functions must output what they print without trailing new line.
 
 ### Prefixes
 
 When writing scripts you as a programmer are free to chose how to name variables
 and functions, but when library is being created more restrictions apply as
 this code is gonna to be reusable. For the sake of clarity all library functions
-and global variables must have some prefix, like `parser__`. It's not required
-to make it almost the same as library name. For instance, it's okay not to have
-`clip_parse__` prefix when writing clip-parse library.
+and global variables must have some prefix, like `clip_parse__`.
 
-### Capitalization
+### Constants
 
 Variables which are set just once and used as constants must be capitalized,
-even they don't have `-r` flag.
+even they don't have `-r` flag. We don't recommend using `-r` as it's
+impossible to define function-local constants with the same name as global ones
+have:
+
+{{< code language="bash" title="Sticky -r flag example" id="3" expand="Show"
+    collapse="Hide" isCollapsed="true" >}}
+declare -r SOME_CONSTANT="global constant"
+
+some_function() {
+  declare -r SOME_CONSTANT="oops, can't redefine global constant"
+}
+
+some_function
+{{< /code >}}
 
 ### Input and output parameters for functions
 
@@ -168,10 +204,11 @@ semantics here.
 First ones are used to store `$1`, `$2` and other parameters.
 Always use them, don't write plain references to `$1` or something like that.
 Other programmers have to know variables intend which is depicted via their
-names. Such variables always have to begin with `in_` prefix.
+names. Such variables always have to begin with `in_` prefix like `in_file`.
 
 Output variables present things those will be returned or echo-ed and used via
-command substitution. Such variables always have to begin with `out_` prefix.
+command substitution. Such variables always have to begin with `out_` prefix
+like `out_color`.
 
 Everything else is named as temporary variables.
 
@@ -183,30 +220,26 @@ clear where variables are defined at the first place and where reassigned.
 Use `-i` flag when variable indented to hold an integer. Don't use `((...))`,
 prefer modifying variables directly.
 
-### CLI
+### Names and values
 
-CLI should have readable and memorable options at the first place, and short
-ones just at the second. It means that not having short options is fine.
+By default, we assume that variable or constant contains some name. In other
+words `file` must be a file name, not it's content or anything else. To
+indicate that some value like timestamp is stored add `_value` suffix to
+a variable like `timestamp_value`.
 
-But some general options always must have both forms:
+Note that we don't tell what can be considered as name and what like value.
+Technically everything can be treated like a some value, but to be more precise
+we differentiate between these two cases. It's like naming everything as a
+`System.Object` in C# while there are many subtypes of it.
 
-- `--help`/`-h`
-- `--version`/`-v`
-- `--author`/`-a`
-- `--email`/`-e`
+Names can be considered as some identifiers, or dictionary keys, something that
+is used to retrieve any data.
 
-When custom options (which are not one of these 4 above) consist on multiple
-words they always have to be hyphen-delimited. Short options for such long ones
-should begin with a single dash and have all first word letters then, like
-`-spc` for `--special-placeholder-config` long equivalent.
+## Choosing language
 
-If it's not enough, it's possible to make add even shorter variations by
-picking just the first letter of the short option. Note that more concise
-option is more name collisions can occur. That's why long variants are better.
+- For continues integration and deployment use Bash (at least 5th).
+- For CLIP page parsers/renderers/converters/explainers use Go.
 
-Never make options which differentiate just by a case, like `-a` and `-A`. It's
-hard to remember what the difference between them. Don't make users to be
-confused.
-
-If you are a such person who prefers type as few as it's possible then provide
-shell completions for commands.
+Currently, our toolkit is written in Bash. Even so, it doesn't mean
+that rules above can be violated. In other words, we are going to rewrite this
+toolkit in Go.
