@@ -233,3 +233,6 @@ Note that we don't tell what can be considered as name and what like value.
 Technically everything can be treated like a some value, but to be more precise
 we differentiate between these two cases. It's like naming everything as a
 `System.Object` in C# while there are many subtypes of it.
+
+Names can be considered as some identifiers, or dictionary keys, something that
+is used to retrieve any data.
