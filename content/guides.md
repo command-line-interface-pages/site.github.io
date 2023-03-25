@@ -132,6 +132,14 @@ confused.
 If you are a such person who prefers type as few as it's possible then provide
 shell completions for commands.
 
+## Help system
+
+Tools always have to invoke some sort of generally used help system instead of
+writing their of equivalents when `--help`/`-h` is passed. To make it clear here
+is a list of things must be used for different languages:
+
+- shell scripts: man page
+
 ## Bash
 
 ### Basic help system
