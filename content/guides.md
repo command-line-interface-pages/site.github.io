@@ -129,8 +129,8 @@ Never make options which differentiate just by a case, like `-a` and `-A`. It's
 hard to remember what the difference between them. Don't make users to be
 confused.
 
-If you are a such person who prefers type as few as it's possible then provide
-shell completions for commands.
+If you prefer to type as few as it's possible then provide shell completions for
+commands.
 
 ## Help system
 
