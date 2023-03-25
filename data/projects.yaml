@@ -1,4 +1,4 @@
-- name: eg
+- namea: eg
   description: Useful examples at the command line
   url: https://github.com/srsudar/eg
   image: eg.png
