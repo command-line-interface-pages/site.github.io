@@ -234,3 +234,12 @@ we differentiate between these two cases. It's like naming everything as a
 
 Names can be considered as some identifiers, or dictionary keys, something that
 is used to retrieve any data.
+
+## Choosing language
+
+- For continues integration and deployment use Bash (at least 5th).
+- For CLIP page parsers/renderers/converters/explainers use Go.
+
+Currently, our toolkit is written in Bash. Even so, it doesn't mean
+that rules above can be violated. In other words, we are going to rewrite this
+toolkit in Go.
