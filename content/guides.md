@@ -153,10 +153,10 @@ Interactive Bash scripts must define the following functions:
 
 While non-interactive ones (which we call libraries here) these functions:
 
-- `<file>_help`
-- `<file>_version`
-- `<file>_author`
-- `<file>_email`
+- `<file>__help`
+- `<file>__version`
+- `<file>__author`
+- `<file>__email`
 
 `<file>` must contain the library name without extension and dashes replaced
 with underscores. For instance for `clip-parse.sh` help function would be
