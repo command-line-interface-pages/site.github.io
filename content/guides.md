@@ -103,6 +103,35 @@ professionals we lack now to attract their attention.
 
 [contributing]: https://github.com/command-line-interface-pages/site.github.io/blob/main/CONTRIBUTING.md?plain=1
 
+## CLI
+
+CLI should have readable and memorable options at the first place, and short
+ones just at the second. It means that not having short options is fine.
+
+But some general options always must have both forms:
+
+- `--help`/`-h`
+- `--version`/`-v`
+- `--author`/`-a`
+- `--email`/`-e`
+
+When custom options (which are not one of these 4 above) consist on multiple
+words they always have to be hyphen-delimited, like `--output-directory`. Short
+options for such long ones should begin with a single dash and have all first
+word letters then, like `-spc` for `--special-placeholder-config` long
+equivalent. Technically such short options are named as old options.
+
+If it's not enough, it's possible to make add even shorter variations by
+picking just the first letter of the short option. Note that more concise
+option is more name collisions can occur. That's why long variants are better.
+
+Never make options which differentiate just by a case, like `-a` and `-A`. It's
+hard to remember what the difference between them. Don't make users to be
+confused.
+
+If you are a such person who prefers type as few as it's possible then provide
+shell completions for commands.
+
 ## Bash
 
 ### Basic help system
@@ -165,31 +194,3 @@ clear where variables are defined at the first place and where reassigned.
 
 Use `-i` flag when variable indented to hold an integer. Don't use `((...))`,
 prefer modifying variables directly.
-
-### CLI
-
-CLI should have readable and memorable options at the first place, and short
-ones just at the second. It means that not having short options is fine.
-
-But some general options always must have both forms:
-
-- `--help`/`-h`
-- `--version`/`-v`
-- `--author`/`-a`
-- `--email`/`-e`
-
-When custom options (which are not one of these 4 above) consist on multiple
-words they always have to be hyphen-delimited. Short options for such long ones
-should begin with a single dash and have all first word letters then, like
-`-spc` for `--special-placeholder-config` long equivalent.
-
-If it's not enough, it's possible to make add even shorter variations by
-picking just the first letter of the short option. Note that more concise
-option is more name collisions can occur. That's why long variants are better.
-
-Never make options which differentiate just by a case, like `-a` and `-A`. It's
-hard to remember what the difference between them. Don't make users to be
-confused.
-
-If you are a such person who prefers type as few as it's possible then provide
-shell completions for commands.
