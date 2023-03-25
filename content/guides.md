@@ -1,5 +1,5 @@
 ---
-title: "Interaction guides"
+title: "Guides"
 date: 2023-03-12T19:16:53+10:00
 draft: false
 ---
