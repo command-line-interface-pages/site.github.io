@@ -10,9 +10,4 @@ There are common extensions suitable for all repositories.
 
 ## List
 
-- YAML:
-  - [YAML (IntelliSence)](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
-- CI/CD:
-  - [GitHub Actions (IntelliSence)](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions)
-- commit messages:
-  - [commitlint (Linter)](https://marketplace.visualstudio.com/items?itemName=joshbolduc.commitlint)
+{{% extension_list %}}
