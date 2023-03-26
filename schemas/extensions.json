@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "common extensions",
+  "description": "Common extensions",
+  "type": "object",
+  "patternProperties": {
+    ".": {
+      "title": "extension category",
+      "description": "An extension category",
+      "type": "object",
+      "patternProperties": {
+        ".": {
+          "title": "common extension",
+          "description": "A common extension",
+          "type": "object",
+          "required": [
+            "description",
+            "type"
+          ],
+          "properties": {
+            "description": {
+              "description": "An extension description",
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "description": "An extension type",
+              "type": "array",
+              "uniqueItems": true,
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "enum": [
+                  "linter",
+                  "formatter",
+                  "intellisence",
+                  "snippets"
+                ]
+              }
+            },
+            "url": {
+              "description": "An extension url",
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

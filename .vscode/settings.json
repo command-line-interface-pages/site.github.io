@@ -3,6 +3,7 @@
         "https://json.schemastore.org/hugo.json": "config.yaml",
         "schemas/repositories.json": "data/repositories.yaml",
         "schemas/projects.json": "data/projects.yaml",
+        "schemas/extensions.json": "data/extensions.yaml",
         "schemas/empty.json": ".github/workflows/*.yaml"
     },
     "commitlint.config.extend.rules": {
