@@ -2,7 +2,7 @@
 ## [{{ $project.name }}]({{ $project.url }})
 {{ $project.description }}
 {{ if $project.image }}
-{{ printf "![%s](%s)" $project.image $project.name | emojify }}
+{{ printf "![%s](%s)" $project.name $project.image }}
 {{ end }}
 {{ if $project.pros }}
 {{ printf "%s" "### Pros :smile:" | emojify }}
