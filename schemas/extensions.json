@@ -34,7 +34,8 @@
                   "linter",
                   "formatter",
                   "intellisence",
-                  "snippets"
+                  "snippets",
+                  "highlighting"
                 ]
               }
             },
