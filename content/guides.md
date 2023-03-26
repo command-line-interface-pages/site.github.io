@@ -114,8 +114,9 @@ professionals we lack now to attract their attention.
 ## Commands and files
 
 All terminal commands should be surrounded with `backticks`, while all file
-names have a **bold font**. It must be done across all site pages and in all
-other Markdown files.
+names have a **bold font**. If a file is a part of absolute or relative path,
+then the whole path has to be put inside double asterisks. It must be done
+across all site pages and in all other Markdown files.
 
 ## CLI
 
