@@ -3,6 +3,10 @@ languageCode: en-us
 title: Command Line Interface Pages
 theme: terminal
 enableEmoji: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 params:
   themeColor: blue
   fullWidthTheme: false

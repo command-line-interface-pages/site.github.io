@@ -1,0 +1,19 @@
+{{ range $project := $.Site.Data.projects }}
+## [{{ $project.name }}]({{ $project.url }})
+{{ $project.description }}
+{{ if $project.image }}
+<img src="{{ $project.image }}" alt="{{ $project.name }}" class="center" style="border-radius: 4px; width:520px; height: auto">
+{{ end }}
+{{ if $project.pros }}
+{{ printf "%s" "### Pros :smile:" | emojify }}
+{{ range $pros := $project.pros }}
+- {{ $pros }}
+{{ end }}
+{{ end }}
+{{ if $project.cons }}
+{{ printf "%s" "### Cons :disappointed:" | emojify }}
+{{ range $cons := $project.cons }}
+- {{ $cons }}
+{{ end }}
+{{ end }}
+{{ end }}
