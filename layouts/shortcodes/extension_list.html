@@ -2,6 +2,6 @@
 ### {{ $category }}
 {{ range $extension, $extension_value := $extensions }}
 - [`{{ $extension }}`]({{ $extension_value.url }}): {{ $extension_value.description }}  
-  **is**: {{ delimit $extension_value.type ", "}}
+  **provides**: {{ delimit $extension_value.type ", "}}
 {{ end }}
 {{ end }}
