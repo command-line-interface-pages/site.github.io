@@ -4,10 +4,9 @@
 
 ### Visual Studio Code
 
-- YAML:
-  - [YAML (IntelliSence)](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
-- commit messages:
-  - [commitlint (Linter)](https://marketplace.visualstudio.com/items?itemName=joshbolduc.commitlint)
+- [common extensions](https://command-line-interface-pages.github.io/site.github.io/extensions/)
+- Hugo:
+  - [Hugo Language and Syntax Support (snippets, highlighting)](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 
 ## How to get started?
 
