@@ -25,16 +25,24 @@ menu:
   - identifier: goals
     name: Goals
     url: /goals/
-    weight: 1
+    weight: 2
   - identifier: future
     name: Future
     url: /future/
+    weight: 3
   - identifier: guides
     name: Guides
     url: /guides/
+    weight: 4
   - identifier: pr-guides
     name: Pull request guides
     url: /pr-guides/
+    weight: 5
+  - identifier: extensions
+    name: Common extensions
+    url: /extensions/
+    weight: 6
   - identifier: projects
     name: Similar projects
     url: /projects/
+    weight: 7
