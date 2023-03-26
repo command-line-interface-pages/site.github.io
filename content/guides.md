@@ -111,6 +111,12 @@ professionals we lack now to attract their attention.
 
 [contributing]: https://github.com/command-line-interface-pages/site.github.io/blob/main/CONTRIBUTING.md?plain=1
 
+## Commands and files
+
+All terminal commands should be surrounded with `backticks`, while all file
+names have a **bold font**. It must be done across all site pages and in all
+other Markdown files.
+
 ## CLI
 
 CLI should have readable and memorable options at the first place, and short
