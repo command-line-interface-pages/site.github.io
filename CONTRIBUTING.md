@@ -52,8 +52,8 @@ To add a new common extension to the extension list:
 - Add a new object like:
 
   ```yaml
-  Commit messages:
-    commitlint:
+  Commit messages: # An extension category
+    commitlint: # A common extension
       description: A VS Code extension that integrates commitlint
       url: https://marketplace.visualstudio.com/items?itemName=joshbolduc.commitlint
       type: [linter]
