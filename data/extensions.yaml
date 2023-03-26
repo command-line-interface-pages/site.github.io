@@ -12,3 +12,8 @@ Commit messages:
     description: A VS Code extension that integrates commitlint into VS Code's commit editor.
     url: https://marketplace.visualstudio.com/items?itemName=joshbolduc.commitlint
     type: [linter]
+Spelling:
+  LTeX – LanguageTool grammar/spell checking:
+    description: LTEX provides offline grammar checking of various markup languages in Visual Studio Code using LanguageTool (LT).
+    url: https://marketplace.visualstudio.com/items?itemName=valentjn.vscode-ltex
+    type: [linter]
