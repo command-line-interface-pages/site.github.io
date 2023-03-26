@@ -13,7 +13,7 @@
 Before writing your own pages try to explore existing ones with preinstalled
 prerequisites. Start with the [simplest](./content/goals.md) one.
 
-### How to add a repository to the home page?
+### How to add a repository to the [home page][home]?
 
 Public repositories are not listed automatically based on our organization.
 It's manually chosen what to show and what not. To add a new repository to
@@ -27,7 +27,9 @@ the repository list:
     description: Command Line Interface (CLI) pages
   ```
 
-### How to add a similar project to the project page?
+[home]: https://command-line-interface-pages.github.io/site.github.io/
+
+### How to add a similar project to the [project page][projects]?
 
 To add a new similar project to the project list:
 
@@ -40,7 +42,9 @@ To add a new similar project to the project list:
     url: https://github.com/srsudar/eg
   ```
 
-### How to add a common extension to the extension page?
+[projects]: https://command-line-interface-pages.github.io/site.github.io/projects/
+
+### How to add a common extension to the [extension page][extensions]?
 
 To add a new common extension to the extension list:
 
@@ -54,6 +58,8 @@ To add a new common extension to the extension list:
       url: https://marketplace.visualstudio.com/items?itemName=joshbolduc.commitlint
       type: [linter]
   ```
+
+[extensions]: https://command-line-interface-pages.github.io/site.github.io/extensions/
 
 ### How else can I help?
 
