@@ -41,6 +41,21 @@ To add a new similar project to the project list:
       url: https://github.com/srsudar/eg
     ```
 
+### How to add a common extension to the extension page?
+
+To add a new common extension to the extension list:
+
+- Open [`data/extensions.yaml`](./data/extensions.yaml) file
+- Add a new object like:
+
+  ```yaml
+  Commit messages:
+    commitlint:
+      description: A VS Code extension that integrates commitlint
+      url: https://marketplace.visualstudio.com/items?itemName=joshbolduc.commitlint
+      type: [linter]
+  ```
+
 ### How else can I help?
 
 Now we don't have anybody in organization who understands HTML, CSS and
