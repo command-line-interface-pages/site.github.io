@@ -1,7 +1,11 @@
+{{ $file_prefix := "content/projects/" }}
 {{ range $project := $.Site.Data.projects }}
 ## [{{ $project.name }}]({{ $project.url }})
 {{ $project.description }}
 {{ if $project.image }}
+{{ if not (fileExists (printf "%s%s" $file_prefix $project.image)) }}
+{{ errorf "Image '%s' doesn't exist" $project.image }}
+{{ end }}
 <img src="{{ $project.image }}" alt="{{ $project.name }}" class="center" style="border-radius: 4px; width:520px; height: auto">
 {{ end }}
 {{ if $project.pros }}
