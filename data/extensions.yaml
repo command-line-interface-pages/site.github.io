@@ -7,11 +7,6 @@ Markdown:
     description: Markdown/CommonMark linting and style checking for Visual Studio Code
     url: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
     type: [linter, formatter]
-YAML:
-  YAML:
-    description: Provides comprehensive YAML Language support to Visual Studio Code, via the yaml-language-server, with built-in Kubernetes syntax support.
-    url: https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml
-    type: [formatter, intellisence, linter, snippets]
 Commit messages:
   commitlint:
     description: A VS Code extension that integrates commitlint into VS Code's commit editor.
