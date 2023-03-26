@@ -8,7 +8,7 @@ markup:
     renderer:
       unsafe: true
 params:
-  themeColor: blue
+  themeColor: pink
   fullWidthTheme: false
   centerTheme: true
   readingTime: true
