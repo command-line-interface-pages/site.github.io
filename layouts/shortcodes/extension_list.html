@@ -1,0 +1,7 @@
+{{ range $category, $extensions := $.Site.Data.extensions }}
+### {{ $category }}
+{{ range $extension, $extension_value := $extensions }}
+- [`{{ $extension }}`]({{ $extension_value.url }}): {{ $extension_value.description }}  
+  **provides**: {{ delimit $extension_value.type ", "}}
+{{ end }}
+{{ end }}

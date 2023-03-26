@@ -4,10 +4,9 @@
 
 ### Visual Studio Code
 
-- YAML:
-  - [YAML (IntelliSence)](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
-- commit messages:
-  - [commitlint (Linter)](https://marketplace.visualstudio.com/items?itemName=joshbolduc.commitlint)
+- [common extensions](https://command-line-interface-pages.github.io/site.github.io/extensions/)
+- Hugo:
+  - [Hugo Language and Syntax Support (snippets, highlighting)](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 
 ## How to get started?
 
@@ -23,10 +22,10 @@ the repository list:
 - Open [`data/repositories.yaml`](./data/repositories.yaml) file
 - Add a new array item like:
 
-    ```yaml
-    - name: cli-pages
-      description: Command Line Interface (CLI) pages
-    ```
+  ```yaml
+  - name: cli-pages
+    description: Command Line Interface (CLI) pages
+  ```
 
 ### How to add a similar project to the project page?
 
@@ -35,11 +34,26 @@ To add a new similar project to the project list:
 - Open [`data/projects.yaml`](./data/projects.yaml) file
 - Add a new array item like:
 
-    ```yaml
-    - name: eg
-      description: Useful examples at the command line
-      url: https://github.com/srsudar/eg
-    ```
+  ```yaml
+  - name: eg
+    description: Useful examples at the command line
+    url: https://github.com/srsudar/eg
+  ```
+
+### How to add a common extension to the extension page?
+
+To add a new common extension to the extension list:
+
+- Open [`data/extensions.yaml`](./data/extensions.yaml) file
+- Add a new object like:
+
+  ```yaml
+  Commit messages:
+    commitlint:
+      description: A VS Code extension that integrates commitlint
+      url: https://marketplace.visualstudio.com/items?itemName=joshbolduc.commitlint
+      type: [linter]
+  ```
 
 ### How else can I help?
 
