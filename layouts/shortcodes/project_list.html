@@ -1,5 +1,5 @@
 {{ range $project := $.Site.Data.projects }}
-{{ printf "## [%s](%s)" $project.name $project.url | emojify }}
+## [{{ $project.name }}]({{ $project.url }})
 {{ $project.description }}
 {{ if $project.image }}
 {{ printf "![%s](%s)" $project.image $project.name | emojify }}
