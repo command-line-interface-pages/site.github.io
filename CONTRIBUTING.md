@@ -37,7 +37,7 @@ To add a new similar project to the project list:
 - Add a new array item like:
 
   ```yaml
-  - name: eg
+  eg: # A similar project
     description: Useful examples at the command line
     url: https://github.com/srsudar/eg
   ```
