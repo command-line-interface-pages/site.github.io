@@ -277,6 +277,14 @@ When documentation exist include its link directly at the end of description
 prepended with `\n` character like
 `A C# compiler\nhttps://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/`.
 
+### Additional properties
+
+Deny additional properties by default, unless it contradicts data format. For
+instance Hugo site config can contain theme-specific options and as there are
+numerous themes it's nearly impossible to present them all in a JSON schema.
+As a result it's more efficient just to leave ability to add not mentioned keys
+while providing IntelliSence for the common Hugo settings.
+
 ## Choosing language
 
 - For continues integration and deployment use Bash (at least 5th).
