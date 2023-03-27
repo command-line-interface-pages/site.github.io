@@ -23,7 +23,7 @@ the repository list:
 - Add a new array item like:
 
   ```yaml
-  cli-pages:
+  cli-pages: # A repository
     description: Command Line Interface (CLI) pages
   ```
 
