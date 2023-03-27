@@ -1,22 +1,22 @@
 {{ $file_prefix := "content/projects/" }}
-{{ range $project := $.Site.Data.projects }}
-## [{{ $project.name }}]({{ $project.url }})
-{{ $project.description }}
-{{ if $project.image }}
-{{ if not (fileExists (printf "%s%s" $file_prefix $project.image)) }}
-{{ errorf "Image '%s' doesn't exist" $project.image }}
+{{ range $project, $project_value := $.Site.Data.projects }}
+## [{{ $project }}]({{ $project_value.url }})
+{{ $project_value.description }}
+{{ if $project_value.image }}
+{{ if not (fileExists (printf "%s%s" $file_prefix $project_value.image)) }}
+{{ errorf "Image '%s' doesn't exist" $project_value.image }}
 {{ end }}
-<img src="{{ $project.image }}" alt="{{ $project.name }}" class="center" style="border-radius: 4px; width:520px; height: auto">
+<img src="{{ $project_value.image }}" alt="{{ $project }}" class="center" style="border-radius: 4px; width:520px; height: auto">
 {{ end }}
-{{ if $project.pros }}
+{{ if $project_value.pros }}
 {{ printf "%s" "### Pros :smile:" | emojify }}
-{{ range $pros := $project.pros }}
+{{ range $pros := $project_value.pros }}
 - {{ $pros }}
 {{ end }}
 {{ end }}
-{{ if $project.cons }}
+{{ if $project_value.cons }}
 {{ printf "%s" "### Cons :disappointed:" | emojify }}
-{{ range $cons := $project.cons }}
+{{ range $cons := $project_value.cons }}
 - {{ $cons }}
 {{ end }}
 {{ end }}

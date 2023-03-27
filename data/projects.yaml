@@ -1,4 +1,4 @@
-- name: eg
+eg:
   description: Useful examples at the command line
   url: https://github.com/srsudar/eg
   image: eg.png
@@ -7,7 +7,7 @@
   cons:
     - Not expressive syntax and too limiting, most of the work should be done
       manually
-- name: TlDr
+TlDr:
   description: Collaborative cheatsheets for console commands
   url: https://github.com/tldr-pages/tldr
   image: tldr.png
