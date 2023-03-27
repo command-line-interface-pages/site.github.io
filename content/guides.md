@@ -253,6 +253,19 @@ we differentiate between these two cases. It's like naming everything as a
 Names can be considered as some identifiers, or dictionary keys, something that
 is used to retrieve any data.
 
+## JSON schema
+
+Requirements are based on the way Visual Studio Code YAML works.
+
+### Keys
+
+Always include `title` key for `object` keys as they are shown in errors when
+not legitimate value is passed. But constantly include `description` key for any
+kind of key. Everything should have its description no matter it is.
+
+Always add constraining keywords like `minLength`, `minItems` unless such
+constraint is not valid according to the data format.
+
 ## Choosing language
 
 - For continues integration and deployment use Bash (at least 5th).
