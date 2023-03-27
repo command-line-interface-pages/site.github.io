@@ -7,13 +7,22 @@ Markdown:
     description: Markdown/CommonMark linting and style checking for Visual Studio Code
     url: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
     type: [linter, formatter]
-Commit messages:
+Version Control Systems:
   commitlint:
     description: A VS Code extension that integrates commitlint into VS Code's commit editor.
     url: https://marketplace.visualstudio.com/items?itemName=joshbolduc.commitlint
     type: [linter]
+  Git Blame:
+    description: See Git Blame information in the status bar for the currently selected line.
+    url: https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame
+    type: ["other"]
 Spelling:
   LTeX – LanguageTool grammar/spell checking:
     description: LTEX provides offline grammar checking of various markup languages in Visual Studio Code using LanguageTool (LT).
     url: https://marketplace.visualstudio.com/items?itemName=valentjn.vscode-ltex
     type: [linter]
+Other:
+  EditoConfig for VS Code:
+    description: This plugin attempts to override user/workspace settings with settings found in .editorconfig files.
+    url: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+    type: [intellisence]
