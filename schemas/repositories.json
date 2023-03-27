@@ -2,34 +2,27 @@
     "$schema": "http://json-schema.org/draft-07/schema",
     "title": "repositories",
     "description": "Repositories",
-    "type": "array",
-    "uniqueItems": true,
-    "items": {
+    "type": "object",
+    "patternProperties": {
+      ".": {
         "title": "repository",
         "description": "A repository",
         "type": "object",
         "required": [
-            "name",
-            "description"
+          "description"
         ],
         "properties": {
-            "name": {
-                "description": "A repository name",
-                "type": "string",
-                "minLength": 1,
-                "examples": [
-                    "cli-pages"
-                ]
-            },
-            "description": {
-                "description": "A repository description",
-                "type": "string",
-                "minLength": 1,
-                "examples": [
-                    "Command Line Interface (CLI) pages"
-                ]
-            }
+          "description": {
+            "description": "A repository description",
+            "type": "string",
+            "minLength": 1,
+            "examples": [
+              "Command Line Interface (CLI) pages"
+            ]
+          }
         },
         "additionalProperties": false
-    }
+      }
+    },
+    "additionalProperties": false
 }
