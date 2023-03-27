@@ -253,7 +253,70 @@ we differentiate between these two cases. It's like naming everything as a
 Names can be considered as some identifiers, or dictionary keys, something that
 is used to retrieve any data.
 
-## Choosing language
+## JSON schema
+
+Requirements are based on the way Visual Studio Code YAML works.
+
+### Keys
+
+Always include `title` key for `object` keys as they are shown in errors when
+not legitimate value is passed. But constantly include `description` key for any
+kind of key. Everything should have its description no matter it is.
+
+Always add constraining keywords like `minLength`, `minItems` unless such
+constraint is not valid according to the data format.
+
+### Titles and descriptions
+
+Titles have to be written in lowercase by default without a trailing dot, just
+names can be capitalized like `C# compiler`. At the same time descriptions
+must start with a capital letter. Both things should be short, but descriptions
+can be longer and should contain articles like `A C# compiler`.
+
+When documentation exist include its link directly at the end of description
+prepended with `\n` character like
+`A C# compiler\nhttps://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/`.
+
+### Additional properties
+
+Deny additional properties by default, unless it contradicts data format. For
+instance Hugo site config can contain theme-specific options and as there are
+numerous themes it's nearly impossible to present them all in a JSON schema.
+As a result it's more efficient just to leave ability to add not mentioned keys
+while providing IntelliSence for the common Hugo settings.
+
+### Pattern properties
+
+Always use pattern properties to signify some names or identifiers. The reason
+for that is simple: YAML Red Hat extension currently can't check whether
+`object`-s are identical or not in arrays and such check happens just for
+simple types like `string`. In other words, extension doesn't detect such cases:
+
+{{< code language="yaml" title="Identical objects example" id="4" expand="Show"
+    collapse="Hide" isCollapsed="true" >}}
+- name: Emily
+  github: https://github.com/EmilySeville7cfg
+- name: Emily
+  github: https://github.com/EmilySeville7cfg
+{{< /code >}}
+
+The solution we propose is to rewrite this file to:
+
+{{< code language="yaml" title="Fixed identical objects example" id="5" expand="Show"
+    collapse="Hide" isCollapsed="true" >}}
+Emily:
+  github: https://github.com/EmilySeville7cfg
+Emily:
+  github: https://github.com/EmilySeville7cfg
+{{< /code >}}
+
+which will cause an error (it's what we want) as there are two equal keys
+representing usernames. By all means, it also doesn't check whether object
+contents are equal, but it looks up whether there are identical keys in the
+same level. Here it's enough, as we don't want permit put data about some user
+several times.
+
+## Choosing language for scripting
 
 - For continues integration and deployment use Bash (at least 5th).
 - For CLIP page parsers/renderers/converters/explainers use Go.
@@ -261,3 +324,17 @@ is used to retrieve any data.
 Currently, our toolkit is written in Bash. Even so, it doesn't mean
 that rules above can be violated. In other words, we are going to rewrite this
 toolkit in Go.
+
+## Choosing language for configs
+
+When there are several choices available and one of them is writing config in
+YAML for some tool, prefer this language. The benefit is to have IntelliSence
+in such configs enabled by YAML extension and based on provided remote or local
+JSON schemas.
+
+Note that JSON schemas are not context aware. It means that they know just what
+is written inside them and what they are referencing too (other schemas). It
+makes impossible to check URL reachability inside schemas or file/directory
+existence. When such things are required write simple Go validator for your
+config file. But it's allowed to do such checks via Hugo templates too instead
+of standalone Go programs.

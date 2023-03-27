@@ -7,3 +7,4 @@ no-inline-html: false
 blanks-around-headings:
   lines_above: 0
   lines_below: 1
+blanks-around-lists: false
