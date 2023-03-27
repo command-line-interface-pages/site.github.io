@@ -316,7 +316,7 @@ contents are equal, but it looks up whether there are identical keys in the
 same level. Here it's enough, as we don't want permit put data about some user
 several times.
 
-## Choosing language
+## Choosing language for scripting
 
 - For continues integration and deployment use Bash (at least 5th).
 - For CLIP page parsers/renderers/converters/explainers use Go.
@@ -324,3 +324,17 @@ several times.
 Currently, our toolkit is written in Bash. Even so, it doesn't mean
 that rules above can be violated. In other words, we are going to rewrite this
 toolkit in Go.
+
+## Choosing language for configs
+
+When there are several choices available and one of them is writing config in
+YAML for some tool, prefer this language. The benefit is to have IntelliSence
+in such configs enabled by YAML extension and based on provided remote or local
+JSON schemas.
+
+Note that JSON schemas are not context aware. It means that they know just what
+is written inside them and what they are referencing too (other schemas). It
+makes impossible to check URL reachability inside schemas or file/directory
+existence. When such things are required write simple Go validator for your
+config file. But it's allowed to do such checks via Hugo templates too instead
+of standalone Go programs.
