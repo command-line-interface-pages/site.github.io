@@ -4,8 +4,6 @@ date: 2023-03-09T17:03:18+10:00
 draft: false
 ---
 
-> :deciduous_tree: Slogan: *[E]xtremely [B]oring, [B]e [C]oncise*, or *EB;BC*
-
 [:star: Star on GitHub](https://github.com/command-line-interface-pages/cli-pages)
 
 # Introduction :information_source:
