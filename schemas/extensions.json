@@ -43,6 +43,11 @@
               "description": "An extension url",
               "type": "string",
               "minLength": 1
+            },
+            "required": {
+              "description": "Whether an extension is required",
+              "type": "boolean",
+              "default": "true"
             }
           },
           "additionalProperties": false
