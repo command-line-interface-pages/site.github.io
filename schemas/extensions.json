@@ -28,17 +28,26 @@
               "type": "array",
               "uniqueItems": true,
               "minItems": 1,
-              "items": {
-                "type": "string",
-                "enum": [
-                  "other",
-                  "linter",
-                  "formatter",
-                  "intellisence",
-                  "snippets",
-                  "highlighting"
-                ]
-              }
+              "oneOf": [
+                {
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "linter",
+                      "formatter",
+                      "intellisence",
+                      "snippets",
+                      "highlighting"
+                    ]
+                  }
+                },
+                {
+                  "items": {
+                    "type": "string",
+                    "const": "other"
+                  }
+                }
+              ]
             },
             "url": {
               "description": "An extension url",
