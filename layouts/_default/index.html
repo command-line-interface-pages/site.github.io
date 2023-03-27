@@ -6,9 +6,7 @@
   {{ end }}
   {{ ":gift: Learn terminal, not just memorize commands!" | emojify | markdownify }}
   {{ "> :deciduous_tree: Slogan: *[E]xtremely [B]oring, [B]e [C]oncise*, or *EB;BC*" | emojify | markdownify }}
-  {{ range $repository := $.Site.Data.repositories }}
-    <a href="https://github.com/command-line-interface-pages/{{ $repository.name }}">{{ emojify ":file_folder:" }} {{ $repository.name | markdownify }}: {{ $repository.description }}</a>
-  {{ end }}
+  {{ partial "repository_list" . }}
   <div class="posts">
     {{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
     {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "posts" }}
