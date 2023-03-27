@@ -1,6 +1,9 @@
 {{ range $category, $extensions := $.Site.Data.extensions }}
 ### {{ $category }}
 {{ range $extension, $extension_value := $extensions }}
+{{ if not (resources.GetRemote $extension_value.url) }}
+{{ errorf "Url '%s' is not reachable" $extension_value.url }}
+{{ end }}
 - [`{{ $extension }}`]({{ $extension_value.url }}): {{ $extension_value.description }}  
   {{ cond (in $extension_value.type "other") "**provides something else**" (printf "**provides**: %s" (delimit (sort $extension_value.type) ", "))}}
 {{ end }}
