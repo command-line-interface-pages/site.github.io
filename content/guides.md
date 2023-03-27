@@ -285,6 +285,37 @@ numerous themes it's nearly impossible to present them all in a JSON schema.
 As a result it's more efficient just to leave ability to add not mentioned keys
 while providing IntelliSence for the common Hugo settings.
 
+### Pattern properties
+
+Always use pattern properties to signify some names or identifiers. The reason
+for that is simple: YAML Red Hat extension currently can't check whether
+`object`-s are identical or not in arrays and such check happens just for
+simple types like `string`. In other words, extension doesn't detect such cases:
+
+{{< code language="yaml" title="Identical objects example" id="4" expand="Show"
+    collapse="Hide" isCollapsed="true" >}}
+- name: Emily
+  github: https://github.com/EmilySeville7cfg
+- name: Emily
+  github: https://github.com/EmilySeville7cfg
+{{< /code >}}
+
+The solution we propose is to rewrite this file to:
+
+{{< code language="yaml" title="Fixed identical objects example" id="5" expand="Show"
+    collapse="Hide" isCollapsed="true" >}}
+Emily:
+  github: https://github.com/EmilySeville7cfg
+Emily:
+  github: https://github.com/EmilySeville7cfg
+{{< /code >}}
+
+which will cause an error (it's what we want) as there are two equal keys
+representing usernames. By all means, it also doesn't check whether object
+contents are equal, but it looks up whether there are identical keys in the
+same level. Here it's enough, as we don't want permit put data about some user
+several times.
+
 ## Choosing language
 
 - For continues integration and deployment use Bash (at least 5th).
