@@ -2,6 +2,6 @@
 ### {{ $category }}
 {{ range $extension, $extension_value := $extensions }}
 - [`{{ $extension }}`]({{ $extension_value.url }}): {{ $extension_value.description }}  
-  {{ cond (in $extension_value.type "other") "**provides something else**" (printf "**provides**: %s" (delimit $extension_value.type ", "))}}
+  {{ cond (in $extension_value.type "other") "**provides something else**" (printf "**provides**: %s" (delimit (sort $extension_value.type) ", "))}}
 {{ end }}
 {{ end }}
