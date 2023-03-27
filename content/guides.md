@@ -266,6 +266,17 @@ kind of key. Everything should have its description no matter it is.
 Always add constraining keywords like `minLength`, `minItems` unless such
 constraint is not valid according to the data format.
 
+### Titles and descriptions
+
+Titles have to be written in lowercase by default without a trailing dot, just
+names can be capitalized like `C# compiler`. At the same time descriptions
+must start with a capital letter. Both things should be short, but descriptions
+can be longer and should contain articles like `A C# compiler`.
+
+When documentation exist include its link directly at the end of description
+prepended with `\n` character like
+`A C# compiler\nhttps://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/`.
+
 ## Choosing language
 
 - For continues integration and deployment use Bash (at least 5th).
