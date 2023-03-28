@@ -1,0 +1,29 @@
+name: Bug report
+description: A bug report
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: actual behavior
+      description: An actual behavior
+      placeholder: Explain what the problem is and what actually happens
+      value: |
+        The problem happens when ...
+
+        Steps to reproduce:
+        - ...
+        - get ... error/warning/crash
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: expected behavior
+      description: An expected behavior
+      placeholder: Explain what the correct behavior should be
+      value: |
+        No error/warning/crash.
+  - type: textarea
+    attributes:
+      label: possible fix
+      description: A possible fix
+      placeholder: Explain what can be done to troubleshoot the problem
