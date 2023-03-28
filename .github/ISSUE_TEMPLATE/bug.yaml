@@ -22,6 +22,8 @@ body:
       placeholder: Explain what the correct behavior should be
       value: |
         No error/warning/crash.
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: possible fix
