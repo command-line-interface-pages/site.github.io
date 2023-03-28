@@ -1,0 +1,16 @@
+name: Feature request
+description: A feature request
+labels: [enhancement]
+body:
+  - type: textarea
+    attributes:
+      label: expected behavior
+      description: An expected behavior
+      placeholder: Explain what the expected behavior should be
+      value: |
+        Ability to ...
+  - type: textarea
+    attributes:
+      label: possible implementation
+      description: A possible implementation
+      placeholder: Explain what can be done to implement the feature
