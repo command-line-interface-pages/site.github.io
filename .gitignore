@@ -1,3 +1,4 @@
 resources/
 public/
 *.kra~
+*.kra-autosave.kra
