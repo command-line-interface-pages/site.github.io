@@ -61,6 +61,21 @@ To add a new common extension to the extension list:
 
 [extensions]: https://command-line-interface-pages.github.io/site.github.io/extensions/
 
+### How to add a common editor to the [editor page][editors]?
+
+To add a new common editor to the editor list:
+
+- Open [`data/editors.yaml`](./data/editors.yaml) file
+- Add a new object like:
+
+  ```yaml
+  Krita: # An editor
+    description: Free and open-source raster graphics editor.
+    url: https://krita.org/en/
+  ```
+
+[editors]: https://command-line-interface-pages.github.io/site.github.io/editors/
+
 ### How else can I help?
 
 Now we don't have anybody in organization who understands HTML, CSS and
