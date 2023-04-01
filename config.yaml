@@ -39,11 +39,11 @@ menu:
     url: /pr-guides/
     weight: 5
   - identifier: extensions
-    name: Common extensions
+    name: Extensions
     url: /extensions/
     weight: 6
   - identifier: editors
-    name: Common editors
+    name: Editors
     url: /editors/
     weight: 7
   - identifier: projects
