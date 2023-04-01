@@ -9,7 +9,8 @@
       "description": "An editor",
       "type": "object",
       "required": [
-        "description"
+        "description",
+        "url"
       ],
       "properties": {
         "description": {
@@ -18,6 +19,14 @@
           "minLength": 1,
           "examples": [
             "Free and open-source raster graphics editor designed primarily for digital art and 2D animation"
+          ]
+        },
+        "url": {
+          "description": "A project url",
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "https://github.com/srsudar/eg"
           ]
         }
       },
