@@ -338,3 +338,26 @@ makes impossible to check URL reachability inside schemas or file/directory
 existence. When such things are required write simple Go validator for your
 config file. But it's allowed to do such checks via Hugo templates too instead
 of standalone Go programs.
+
+## Krita
+
+When creating .kra Krita files it's important to remember that they should be
+organized in a pretty way like programming code.
+
+### Layers
+
+We prefer to follow these rules while naming and structuring layers:
+
+- There is also just one layer named **Background** which filled with some
+  color/gradient/pattern/texture.
+- By default, we prefer vector layers for any kind of objects as they easier to
+  modify. Paint layers can be used just when any complex thing has to be drawn.
+- Any transformations namely changing colors, scaling, modifying transparency
+  must be done via mask layers as they provide a non-destructive layer edit
+  approach.
+- Layer masks should be named using this syntax: `<Type>: <Description>`, e.g.
+  `Filter: Decolorize` or `Transform: Upscale`.
+- Any layers those add some effects like shadow, reflections, should be named in
+  the following manner: `<Effect>: <Base layer>`. To make things clear, let's
+  say we created layer with books drawn on it (**Books** layer) and then added a
+  new one to add shadow for books with title **Shadow: Books**.
