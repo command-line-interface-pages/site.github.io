@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "editors",
+  "description": "Editors",
+  "type": "object",
+  "patternProperties": {
+    ".": {
+      "title": "editor",
+      "description": "An editor",
+      "type": "object",
+      "required": [
+        "description"
+      ],
+      "properties": {
+        "description": {
+          "description": "An editor description",
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "Free and open-source raster graphics editor designed primarily for digital art and 2D animation"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

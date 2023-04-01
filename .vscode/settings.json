@@ -4,6 +4,7 @@
         "schemas/repositories.json": "data/repositories.yaml",
         "schemas/projects.json": "data/projects.yaml",
         "schemas/extensions.json": "data/extensions.yaml",
+        "schemas/editors.json": "data/editors.yaml",
         "schemas/empty.json": ".github/workflows/*.yaml"
     },
     "commitlint.config.extend.rules": {
