@@ -42,7 +42,11 @@ menu:
     name: Common extensions
     url: /extensions/
     weight: 6
+  - identifier: editors
+    name: Common editors
+    url: /editors/
+    weight: 7
   - identifier: projects
     name: Similar projects
     url: /projects/
-    weight: 7
+    weight: 8
