@@ -39,10 +39,14 @@ menu:
     url: /pr-guides/
     weight: 5
   - identifier: extensions
-    name: Common extensions
+    name: Extensions
     url: /extensions/
     weight: 6
+  - identifier: editors
+    name: Editors
+    url: /editors/
+    weight: 7
   - identifier: projects
     name: Similar projects
     url: /projects/
-    weight: 7
+    weight: 8

@@ -1,0 +1,3 @@
+{{ range $editor, $editor_value := $.Site.Data.editors }}
+- [{{ $editor }}]({{ $editor_value.url }}): {{ $editor_value.description }}
+{{ end }}
