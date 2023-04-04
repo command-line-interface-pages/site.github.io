@@ -6,6 +6,9 @@ draft: false
 
 [:star: Star on GitHub](https://github.com/command-line-interface-pages/cli-pages)
 
+{{< image src="logo-animated.gif" alt="logo animated" position="center"
+    style="border-radius: 4px; width: 100px; height: auto" >}}
+
 # Introduction :information_source:
 
 Want to learn [command syntax][cli-pages],
