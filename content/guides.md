@@ -331,7 +331,8 @@ toolkit in Go.
 When there are several choices available and one of them is writing config in
 YAML for some tool, prefer this language. The benefit is to have IntelliSence
 in such configs enabled by YAML extension and based on provided remote or local
-JSON schemas.
+JSON schemas. Note that JSON also can be used, but only when YAML is not a valid
+choice.
 
 Note that JSON schemas are not context aware. It means that they know just what
 is written inside them and what they are referencing too (other schemas). It
