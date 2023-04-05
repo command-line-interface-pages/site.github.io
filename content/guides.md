@@ -331,7 +331,8 @@ toolkit in Go.
 When there are several choices available and one of them is writing config in
 YAML for some tool, prefer this language. The benefit is to have IntelliSence
 in such configs enabled by YAML extension and based on provided remote or local
-JSON schemas.
+JSON schemas. Note that JSON also can be used, but only when YAML is not a valid
+choice.
 
 Note that JSON schemas are not context aware. It means that they know just what
 is written inside them and what they are referencing too (other schemas). It
@@ -339,6 +340,16 @@ makes impossible to check URL reachability inside schemas or file/directory
 existence. When such things are required write simple Go validator for your
 config file. But it's allowed to do such checks via Hugo templates too instead
 of standalone Go programs.
+
+Configuration files also can be written in JavaScript, but only if they provide
+some benefits over using YAML/JSON. Editor configs like
+**.vscode/settings.json** are editor specific and some CLI tool which is
+integrated with some editor can not understand custom settings put in a such
+config. When it's the case JavaScript can be involved, not in another
+situation. For example, `commitlint` [uses][rules] JavaScript as
+it can pull custom settings from .js file when invoked in terminal.
+
+[rules]: https://github.com/command-line-interface-pages/site.github.io/blob/main/commitlint.config.js#L37
 
 ## Krita
 
