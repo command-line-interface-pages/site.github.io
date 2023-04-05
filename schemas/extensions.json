@@ -38,7 +38,9 @@
                       "formatter",
                       "intellisence",
                       "snippets",
-                      "highlighting"
+                      "highlighting",
+                      "unit test executor",
+                      "debugger"
                     ]
                   }
                 },

@@ -103,7 +103,8 @@ For the sake of clear understanding please view [this][contributing]
 **CONTRIBUTING.md** in this repository.
 
 Instead of `<Used-for>` write this list in braces with some items omitted:
-`(linter, formatter, intellisence, snippets, highlighting)`.
+`(linter, formatter, intellisence, snippets, highlighting, unit test executor,
+debugger)`.
 
 Note that it's possible to add nested headers for `How to get started?`. They
 can be used to show how to work with some custom things, like our own Hugo data
