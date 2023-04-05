@@ -340,6 +340,16 @@ existence. When such things are required write simple Go validator for your
 config file. But it's allowed to do such checks via Hugo templates too instead
 of standalone Go programs.
 
+Configuration files also can be written in JavaScript, but only if they provide
+some benefits over using YAML/JSON. Editor configs like
+**.vscode/settings.json** are editor specific and some CLI tool which is
+integrated with some editor can not understand custom settings put in a such
+config. When it's the case JavaScript can be involved, not in another
+situation. For example, `commitlint` [uses][rules] JavaScript as
+it can pull custom settings from .js file when invoked in terminal.
+
+[rules]: https://github.com/command-line-interface-pages/site.github.io/blob/main/commitlint.config.js#L37
+
 ## Krita
 
 When creating .kra Krita files it's important to remember that they should be
