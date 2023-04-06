@@ -22,3 +22,6 @@
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QEditor configs like .vscode/settings.json are editor specific and CLI tool which is integrated with some editor can not understand custom settings put in a such config.\\E$"}
 {"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QEditor configs like .vscode/settings.json are editor specific and some CLI tool which is integrated with some editor can not understand custom settings put in a such config.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QEditor configs like .vscode/settings.json are editor specific and some CLI tool which is integrated with some editor can not understand custom settings put in a such config.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QCurrently, we are not planning to support .\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qis not a valid reason to reject proposals.\\E$"}
+{"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QAt the first place, because doing so you deny others work and spent time.\\E$"}
