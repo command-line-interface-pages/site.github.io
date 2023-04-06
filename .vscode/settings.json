@@ -5,6 +5,7 @@
         "schemas/projects.json": "data/projects.yaml",
         "schemas/extensions.json": "data/extensions.yaml",
         "schemas/editors.json": "data/editors.yaml",
+        "schemas/support.json": "data/support.yaml",
         "schemas/empty.json": ".github/workflows/*.yaml"
     }
 }

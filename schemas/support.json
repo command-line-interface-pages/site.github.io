@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "projects",
+  "description": "Projects",
+  "type": "object",
+  "patternProperties": {
+    ".": {
+      "title": "project",
+      "description": "A project",
+      "type": "object",
+      "required": [
+        "url"
+      ],
+      "properties": {
+        "url": {
+          "description": "A project pull request url",
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "https://github.com/srsudar/eg/pull/97"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
