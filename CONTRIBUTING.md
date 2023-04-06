@@ -13,7 +13,7 @@
     ```json
     {
       "yaml.schemas": {
-        "empty.json": ".github/workflows/*.yaml"
+        "schemas/empty.json": ".github/workflows/*.yaml"
       }
     }
     ```
