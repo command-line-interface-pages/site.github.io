@@ -33,6 +33,21 @@ project maintainers and it's contributors.
   not sorted by increasing complexity. By complexity, we mean here simply number
   of options/subcommands and commands required for some example. Code examples
   with an equal complexity can be ordered as you want.
+- Almost the same rule applies for closing PRs: they can't be closed by
+  maintainers until such kind of PR currently is not accepted. Note that what
+  sort of PRs is not valid for now must be explicitly
+  [listed]({{< ref "goals/#introduction-%E2%84%B9" >}}) on this site. For
+  instance:
+
+  > Currently, we are not planning to support <something>.
+
+  is not a valid reason to reject proposals. At the first place, because doing
+  so you deny others work and spent time. At the second place as proposed
+  changes can be useful.
+- When it's better (on your opinion) to send PR to another repository, suggest
+  contributor to do so, not deny their work. It's legitimate to create new
+  repositories for any contributors if it doesn't violate the current
+  organization.
 - Test CI and automation scripts, relying on them. People can make errors
   and introduce them in code, but even so automation is an important part of
   our workflow. More automation is done, fewer reviewers are required, PRs
