@@ -89,7 +89,7 @@ tools like render, parser and other stuff which are written mainly in Bash.
 {{% support_list %}}
 
 :red_circle: Partial support: just FAQ for this project is provided.  
-:green_circle: Full support: this project is also mentioned in README.
+:green_circle: Full support: this project is also mentioned in **README.md**.
 
 [cli-pages]: https://github.com/command-line-interface-pages/cli-pages
 [directory-pages]: https://github.com/command-line-interface-pages/directory-pages
