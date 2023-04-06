@@ -9,15 +9,23 @@
       "description": "A project",
       "type": "object",
       "required": [
-        "url"
+        "introduction_url"
       ],
       "properties": {
-        "url": {
-          "description": "A project pull request url",
+        "introduction_url": {
+          "description": "A pull request url adding help page for the current one",
           "type": "string",
           "minLength": 1,
           "examples": [
             "https://github.com/srsudar/eg/pull/97"
+          ]
+        },
+        "mention_url": {
+          "description": "A pull request url adding mention for the current one",
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "https://github.com/rstacruz/cheatsheets/pull/1961"
           ]
         }
       },

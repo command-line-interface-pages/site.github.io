@@ -1,8 +1,10 @@
 TlDr:
-  url: https://github.com/tldr-pages/tldr/pull/9845
+  introduction_url: https://github.com/tldr-pages/tldr/pull/9845
+  mention_url: https://github.com/tldr-pages/tldr/pull/9809
 Cheat:
-  url: https://github.com/cheat/cheatsheets/pull/226
-cheatsheets:
-  url: https://github.com/rstacruz/cheatsheets/pull/1953
+  introduction_url: https://github.com/cheat/cheatsheets/pull/226
+Cheatsheets:
+  introduction_url: https://github.com/rstacruz/cheatsheets/pull/1953
+  mention_url: https://github.com/rstacruz/cheatsheets/pull/1961
 Eg:
-  url: https://github.com/srsudar/eg/pull/97
+  introduction_url: https://github.com/srsudar/eg/pull/97
