@@ -25,3 +25,5 @@
 {"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QCurrently, we are not planning to support .\\E$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qis not a valid reason to reject proposals.\\E$"}
 {"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QAt the first place, because doing so you deny others work and spent time.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qcontent.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qcommon extensions\nYAML:\nYAML (linter, formatter, intellisence, snippets) If you prefer GitHub Actions extension over this one, it's possible to disable YAML extension for workflow files via:\\E$"}

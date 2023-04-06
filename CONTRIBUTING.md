@@ -5,6 +5,27 @@
 ### Visual Studio Code
 
 - [common extensions](https://command-line-interface-pages.github.io/site.github.io/extensions/)
+- YAML:
+  - [YAML (linter, formatter, intellisence, snippets)](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)  
+    If you prefer [GitHub Actions](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions) extension over this one, it's possible
+    to disable YAML extension for workflow files via:
+
+    ```json
+    {
+      "yaml.schemas": {
+        "schemas/empty.json": ".github/workflows/*.yaml"
+      }
+    }
+    ```
+
+    where **empty.json** is a schema with:
+
+    ```json
+    {}
+    ```
+
+    content.
+
 - Hugo:
   - [Hugo Language and Syntax Support (snippets, highlighting)](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 
