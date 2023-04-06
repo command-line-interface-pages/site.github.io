@@ -12,6 +12,8 @@ The main task now is to make all tools support
 - write Bash-based parser to quickly parse pages
 - use it in render and some converters
 
+As a sidenote we don't consider any PRs related to v3 syntax for now.
+
 [syntax]: https://github.com/command-line-interface-pages/syntax/blob/main/base.md
 
 ## [CLI pages][cli-pages] :books:

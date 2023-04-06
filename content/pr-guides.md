@@ -35,8 +35,9 @@ project maintainers and it's contributors.
   with an equal complexity can be ordered as you want.
 - Almost the same rule applies for closing PRs: they can't be closed by
   maintainers until such kind of PR currently is not accepted. Note that what
-  sort of PRs is not valid for now must be explicitly listed on this site.
-  For instance:
+  sort of PRs is not valid for now must be explicitly
+  [listed]({{< ref "goals/#introduction-%E2%84%B9" >}}) on this site. For
+  instance:
 
   > Currently, we are not planning to support <something>.
 
