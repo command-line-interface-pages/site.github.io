@@ -6,7 +6,7 @@
 
 - [common extensions](https://command-line-interface-pages.github.io/site.github.io/extensions/)
 - YAML:
-  - [YAML (linter, formatter, intellisence, snippets)](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+  - [YAML (linter, formatter, intellisence, snippets)](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)  
     If you prefer GitHub Actions extension over this one, it's possible
     to disable YAML extension for workflow files via:
 
