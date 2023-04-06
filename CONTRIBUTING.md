@@ -6,9 +6,9 @@
 
 - [common extensions](https://command-line-interface-pages.github.io/site.github.io/extensions/)
 - YAML:
-  - [YAML (linter, formatter, intellisence, snippets)](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)  
-    If you prefer [GitHub Actions](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions) extension over this one, it's possible
-    to disable YAML extension for workflow files via:
+  - [YAML (linter, formatter, intellisence, snippets)][yaml-extension]  
+    If you prefer [GitHub Actions][github-actions-extension] extension over this
+    one, it's possible to disable YAML extension for workflow files via:
 
     ```json
     {
@@ -27,7 +27,11 @@
     content.
 
 - Hugo:
-  - [Hugo Language and Syntax Support (snippets, highlighting)](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+  - [Hugo Language and Syntax Support (snippets, highlighting)][hugo-language-and-syntax-support-snippets-highlighting-extension]
+
+[yaml-extension]: https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml
+[github-actions-extension]: https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions
+[hugo-language-and-syntax-support-snippets-highlighting-extension]: https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml
 
 ## How to get started?
 
