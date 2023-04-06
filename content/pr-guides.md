@@ -44,7 +44,10 @@ project maintainers and it's contributors.
   is not a valid reason to reject proposals. At the first place, because doing
   so you deny others work and spent time. At the second place as proposed
   changes can be useful.
-
+- When it's better (on your opinion) to send PR to another repository, suggest
+  contributor to do so, not deny their work. It's legitimate to create new
+  repositories for any contributors if it doesn't violate the current
+  organization.
 - Test CI and automation scripts, relying on them. People can make errors
   and introduce them in code, but even so automation is an important part of
   our workflow. More automation is done, fewer reviewers are required, PRs
