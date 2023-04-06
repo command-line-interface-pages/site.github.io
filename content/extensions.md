@@ -19,6 +19,9 @@ reason we put it here.
 
 ### Snippets for GitHub workflows
 
+Each snippet has a single char prefix as there is no ability to apply snippets
+to just GitHub workflow files in YAML Red Hat extension.
+
 {{< code language="json" title="Snippets" id="1" expand="Show"
     collapse="Hide" isCollapsed="true" >}}
 {
