@@ -1,0 +1,14 @@
+{{- range $project, $project_value := $.Site.Data.support -}}
+{{- if not (resources.GetRemote $project_value.introduction_url) -}}
+{{- errorf "Url '%s' is not reachable" $project_value.introduction_url -}}
+{{- end -}}
+{{- if not (resources.GetRemote $project_value.mention_url) -}}
+{{- errorf "Url '%s' is not reachable" $project_value.mention_url -}}
+{{- end -}}
+{{ $suffix := "partial :red_circle:" }}
+{{- if $project_value.mention_url -}}
+{{ $suffix = "full :green_circle:" }}
+{{- end -}}
+[`{{- printf "%s (%s)" $project ( $suffix | emojify ) -}}`]({{- $project_value.introduction_url -}})
+{{- end -}}
+

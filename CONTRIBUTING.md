@@ -76,6 +76,21 @@ To add a new common editor to the editor list:
 
 [editors]: https://command-line-interface-pages.github.io/site.github.io/editors/
 
+### How to add a project supporting this one to the [supported by list][support]?
+
+To add a new common editor to the editor list:
+
+- Open [`data/support.yaml`](./data/support.yaml) file
+- Add a new object like:
+
+  ```yaml
+  Cheatsheets: # A project
+    introduction_url: https://github.com/rstacruz/cheatsheets/pull/1953
+    mention_url: https://github.com/rstacruz/cheatsheets/pull/1961
+  ```
+
+[support]: https://command-line-interface-pages.github.io/site.github.io/about/#supported-by-
+
 ### How else can I help?
 
 Now we don't have anybody in organization who understands HTML, CSS and

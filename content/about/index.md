@@ -86,10 +86,10 @@ tools like render, parser and other stuff which are written mainly in Bash.
 
 ## Supported by :heart_eyes:
 
-[TlDr](https://github.com/tldr-pages/tldr/pull/9845)
-[Cheat](https://github.com/cheat/cheatsheets/pull/226)
-[Cheatsheets](https://github.com/rstacruz/cheatsheets/pull/1953)
-[Eg](https://github.com/srsudar/eg/pull/97)
+{{% support_list %}}
+
+:red_circle: Partial support: just FAQ for this project is provided.  
+:green_circle: Full support: this project is also mentioned in README.
 
 [cli-pages]: https://github.com/command-line-interface-pages/cli-pages
 [directory-pages]: https://github.com/command-line-interface-pages/directory-pages

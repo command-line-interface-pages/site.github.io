@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "projects",
+  "description": "Projects",
+  "type": "object",
+  "patternProperties": {
+    ".": {
+      "title": "project",
+      "description": "A project",
+      "type": "object",
+      "required": [
+        "introduction_url"
+      ],
+      "properties": {
+        "introduction_url": {
+          "description": "A pull request url adding help page for the current one",
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "https://github.com/srsudar/eg/pull/97"
+          ]
+        },
+        "mention_url": {
+          "description": "A pull request url adding mention for the current one",
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "https://github.com/rstacruz/cheatsheets/pull/1961"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
