@@ -50,4 +50,6 @@ for CI/CD pipelines, but constrain shell scripts to short ones and require
 rewrite them if they are too long.
 
 Note that we don't deprecate Bash tooling right now, we are going to close some
-opened issues in its repo (especially, fix bugs), but that's all.
+opened issues in its repo (especially, fix bugs), but that's all. Today we are
+closing some issues marking them as `invalid` to implement this stuff in Go
+later.
