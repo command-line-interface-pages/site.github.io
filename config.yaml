@@ -16,6 +16,7 @@ params:
   TocTitle: Contents
   logo:
     logoText: "[C]ommand [L]ine [I]nterface [P]ages (CLIP)"
+  favicon: favicon.ico
 menu:
   main:
   - identifier: about
