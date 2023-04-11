@@ -322,6 +322,8 @@ several times.
 - For continues integration and deployment use Bash (at least 5th) until
   scripts are longer than 200 lines (including empty ones).
 - For CLIP page parsers/renderers/converters/explainers use Go.
+- Plain code in `sed`, `awk`, `jq`, `yq` is not allowed, it always must be
+  embedded in Bash script.
 
 Currently, our toolkit is written in Bash. Even so, it doesn't mean
 that rules above can be violated. In other words, we are going to rewrite this
