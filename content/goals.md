@@ -14,7 +14,7 @@ The main task now is to make all tools support
 
 As a sidenote we don't consider any PRs related to v3 syntax for now.
 
-[syntax]: https://github.com/command-line-interface-pages/syntax/blob/main/base.md
+[syntax]: https://github.com/command-line-interface-pages/syntax/blob/main/markdown-based/base.md
 
 ## [CLI pages][cli-pages] :books:
 
